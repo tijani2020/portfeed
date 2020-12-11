@@ -9,8 +9,9 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         navigation.style.padding = "0.5rem 0rem";
+        navigation.style.borderBottom = "2px solid #7b1fed";
         navigation.style.backgroundColor = "#fff";
-        siteName.style.color = "black";
+        siteName.style.color = "#7b1fed";
         logo.style.fontSize = "1rem";
         ulLink.id = "blacklink";
 
@@ -18,6 +19,7 @@ function scrollFunction() {
 
     else {
         navigation.style.padding = "1rem 0rem";
+        navigation.style.borderBottom = "none";
         logo.style.fontSize = "1.5rem";
         siteName.style.color = "#fff";
         navigation.style.backgroundColor = "transparent";
@@ -25,4 +27,21 @@ function scrollFunction() {
 
     }
 
+}
+
+
+
+const links = document.querySelectorAll(".menu ul a");
+
+for (const link of links) {
+  link.addEventListener("click", clickHandler);
+}
+
+function clickHandler(e) {
+  e.preventDefault();
+  const href = this.getAttribute("href");
+
+  document.querySelector(href).scrollIntoView({
+    behavior: "smooth"
+  });
 }

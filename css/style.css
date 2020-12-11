@@ -40,7 +40,7 @@ body {
 }
 #navbar #logo h1 {
 
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.4rem;
 }
 
 #navbar .menu {
@@ -63,7 +63,7 @@ body {
 }
 #blacklink li a {
     text-decoration: none;
-    color: black;
+    color: #7b1fed;
 }
 
 /* ===== end navbar ===== */
@@ -88,8 +88,7 @@ header {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: black;
-    opacity: .7;
+    background: linear-gradient(to bottom, hsl(267, 87%, 50%) 10%, hsl(267, 85%, 53%,0.7) 90%);
   }
 
   header .hero {
@@ -130,8 +129,8 @@ header .hero .socials {
 
 header .hero .socials a {
     text-decoration: none;
-    color: rgb(250, 250, 250);
-    background-color: rgba(40, 38, 38, 0.804);
+    color: #7d21ed;
+    background-color: rgba(255, 255, 255, 0.804);
     border:  0.25px solid rgb(83, 80, 80);
     border-radius: 4px;
     width: 25px;
@@ -140,8 +139,11 @@ header .hero .socials a {
 }
 
 header .hero .socials a:hover {
-    background-color: rgb(61, 61, 255);
-    transition: all linear 0.2s;
+    background-color: #7b1fed;
+    transition: all linear 1.5s t;
+    color: white;
+    border:  0.25px solid rgb(186, 186, 186);
+
 
 }
 
@@ -151,51 +153,152 @@ header .hero .socials a:hover {
 
 /* ===== start about ===== */
 
-.about {
+#about {
     height: 100vh;
     color: #000;
     display: flex;
     align-items: center;
 }
 
-.about .container {
+#about .container {
     padding: 0px 150px;
 }
 
-.about .container .informations {
+#about .container .informations {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0%;
 }
 
-.about .info,
-.about .skill {
+#about .info,
+#about .skill {
     width: 50%;
 }
 
-.about .about-head {
+#about .about-head {
     text-align: center;
 }
-.about .about-head p{
+#about .about-head h1 {
+    font-size: 45px;
+    color: #7b1fed;
+}
+#about .about-head {
+    font-size: 25px;
+}
+#about .about-head p{
     margin:  30px 0px;
 }
 
 
-/* Container for skill bars */
+.info .detail .detail-item {
+    margin: 25px 0px;
+}
+.info .detail .detail-item i {
+    margin-right: 15px;
+    color: #7b1fed;
+}
+
+/*   ==skill== */
 .skill .container {
-    width: 100%; /* Full width */
-    background-color: #ddd; /* Grey background */
+    width: 100%; 
+    background-color: #ddd; 
+    height: 5px;
+    position: relative;
+    margin-top: 3px;
+    margin-bottom: 15px;
   }
   
   .skills {
-    text-align: right; /* Right-align text */
-    padding-top: 10px; /* Add top padding */
-    padding-bottom: 10px; /* Add bottom padding */
-    color: white; /* White text color */
+    background-color: #7b1fed;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    text-align: right;
   }
   
-  .html {width: 90%; background-color: #000;} 
-  .css {width: 80%; background-color: #000;} 
-  .js {width: 65%; background-color: #000;} 
-  .php {width: 60%; background-color: #000;}
+  .skills p {
+      margin-top: 8px;
+  }
+  .html {width: 90%; 
+    animation: htmlpercent 1s  100ms  ease-in;
+} 
+  .css {width: 80%; 
+    animation: csspercent 1s  200ms  ease-in;
+} 
+  .js {width: 65%; 
+    animation: jspercent 1s  300ms  ease-in;
+} 
+  .php {width: 60%;
+    animation: phppercent 1s  400ms  ease-in;
+}
+/*   ==skill animation == */
+
+@keyframes htmlpercent {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 90%;
+    }
+}
+@keyframes csspercent {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 80%;
+    }
+}
+@keyframes jspercent {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 65%;
+    }
+}
+@keyframes phppercent {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 60%;
+    }
+}
+/*   ==skill== */
+
+/*   ==== end about ==== */
+
+  #services {
+      height: 100vh;
+      background-color: #7d21ed1a;
+  }
+
+
+  #portfolio {
+      height: 100vh;
+
+  }
+
+
+  #testimonials {
+      height: 100vh;
+      background-color:#7d21ed1a;
+  }
+
+  #blog {
+      height: 100vh;
+  }
+
+  #contact {
+      height: 100vh;
+      background-color:#7d21ed1a;
+  }
+
+
+
