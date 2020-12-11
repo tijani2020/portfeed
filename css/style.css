@@ -141,6 +141,7 @@ header .hero .socials a {
 
 header .hero .socials a:hover {
     background-color: rgb(61, 61, 255);
+    transition: all linear 0.2s;
 
 }
 
@@ -152,4 +153,49 @@ header .hero .socials a:hover {
 
 .about {
     height: 100vh;
+    color: #000;
+    display: flex;
+    align-items: center;
 }
+
+.about .container {
+    padding: 0px 150px;
+}
+
+.about .container .informations {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0%;
+}
+
+.about .info,
+.about .skill {
+    width: 50%;
+}
+
+.about .about-head {
+    text-align: center;
+}
+.about .about-head p{
+    margin:  30px 0px;
+}
+
+
+/* Container for skill bars */
+.skill .container {
+    width: 100%; /* Full width */
+    background-color: #ddd; /* Grey background */
+  }
+  
+  .skills {
+    text-align: right; /* Right-align text */
+    padding-top: 10px; /* Add top padding */
+    padding-bottom: 10px; /* Add bottom padding */
+    color: white; /* White text color */
+  }
+  
+  .html {width: 90%; background-color: #000;} 
+  .css {width: 80%; background-color: #000;} 
+  .js {width: 65%; background-color: #000;} 
+  .php {width: 60%; background-color: #000;}
