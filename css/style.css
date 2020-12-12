@@ -324,11 +324,103 @@ header .hero .socials a:hover {
 
 /*   ==== end services ==== */
 
+
+/*   ==== start portfolio ==== */
+
   #portfolio {
       height: 100vh;
-     
 
   }
+  
+#portfolio .container {
+    padding: 70px 0px;
+
+}
+
+#portfolio .skills-menu {
+    margin: 50px 0px;
+    font-size: 18px;
+}
+
+
+#portfolio .skills-menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#portfolio .skills-menu ul li:first-child {
+    color: white;
+    background-color: #7b1fed;
+}
+
+#portfolio .skills-menu ul li {
+    list-style: none;
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5PX 10px;
+    border: 2px solid #7b1fed;
+    color: #7b1fed;
+    cursor: pointer;
+}
+
+
+.projects-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+.project-box {
+    width: 25%;
+    height: 200px;
+    margin: 10px;
+}
+
+.projects-box .project1 {
+    background: url(/Images/portfolio.png);
+    background-size: cover;
+    background-position: center;
+}
+.projects-box .project2 {
+    background: url(/Images/stablehair.png);
+    background-size: cover;
+    background-position: center;
+}
+.projects-box .project3 {
+    background: url(/Images/devdevshow.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.more-projects {
+    background-color: white;
+    border-radius: 5px;
+    padding: 5PX 10px;
+    color: #7b1fed;
+    width: 150px;
+    padding: 5px 10px;
+    border: 2px solid #7b1fed;
+    margin: auto;
+    cursor: pointer;
+}
+.more-projects:hover {
+    color: white;
+    background-color: #7b1fed;
+}
+
+
+.more-projects i {
+    font-size: 20px;
+    margin-left: 3px;
+}
+
+
+
+  /*   ==== end portfolio ==== */
 
 
   #testimonials {
