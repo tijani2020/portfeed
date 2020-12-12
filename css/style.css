@@ -176,17 +176,16 @@ header .hero .socials a:hover {
     width: 50%;
 }
 
-#about .about-head {
+.section-head {
     text-align: center;
+    font-size: 25px;
 }
-#about .about-head h1 {
+.section-head h1 {
     font-size: 45px;
     color: #7b1fed;
 }
-#about .about-head {
-    font-size: 25px;
-}
-#about .about-head p{
+
+#about .section-head p{
     margin:  30px 0px;
 }
 
@@ -274,14 +273,60 @@ header .hero .socials a:hover {
 
 /*   ==== end about ==== */
 
+
+/*   ==== start services ==== */
   #services {
       height: 100vh;
-      background-color: #7d21ed1a;
+      background-color: #bb84ff1a;
+      display: flex;
+      align-items: center;
+      
+  }
+
+  #services .container {
+      padding: 0px 100px;
+  }
+  #services .services-head {
+      margin: 50px 0px;
+  }
+  .services-items {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .services-item {
+      width: 30%;
+      text-align: center;
+      margin: 20px;
+      background-color: white;
+      padding: 20px;
+
+
+  }.services-item i {
+      color: #7b1fed;
+      font-size: 30px;
   }
 
 
+  .services-item h3 {
+      color: gray;
+      margin: 15px 0px;
+  }
+
+  .services-item p {
+      margin-bottom: 15px;
+  }
+
+
+
+
+
+/*   ==== end services ==== */
+
   #portfolio {
       height: 100vh;
+     
 
   }
 
