@@ -329,7 +329,6 @@ header .hero .socials a:hover {
 
   #portfolio {
       height: 100vh;
-
   }
   
 #portfolio .container {
@@ -428,10 +427,21 @@ header .hero .socials a:hover {
       background-color:#7d21ed1a;
   }
 
-  #blog {
-      height: 100vh;
-  }
+/* ===== start Blog =====*/
 
+
+  #blog {
+    height: 100vh;
+    
+}
+
+#blog .container {
+    padding: 70px 150px;
+}
+
+
+
+/* ===== end Blog =====*/
   #contact {
       height: 100vh;
       background-color:#7d21ed1a;
