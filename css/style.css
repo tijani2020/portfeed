@@ -439,6 +439,71 @@ header .hero .socials a:hover {
     padding: 70px 150px;
 }
 
+#blog .blog-posts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+
+
+#blog .blog-posts .blog-post {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    margin: 10px;
+    position: relative;
+    vertical-align: center;
+}
+
+
+.excerpt {
+    background-color: hsl(267, 85%, 53%, 0.05);
+    height: 50%;
+    padding: 20px;
+    text-align: center;
+}
+
+.excerpt p {
+    margin-top: 20px;
+}
+.img1 {
+    background: url(/Images/post1.jpg);
+    background-size: cover;
+    height: 200px;
+}
+
+.img2 {
+    background: url(/Images/pos3.jpg);
+    background-size: cover;
+    height: 200px;
+}
+
+.img3 {
+    background: url(/Images/post2.jpg);
+    background-size: cover;
+    height: 200px;
+}
+
+.topic {
+    width: 30%;
+    position: absolute;
+    background-color: white;
+    border-radius: 15px;
+    padding: 5PX 10px;
+    border: 2px solid #7b1fed;
+    color: #7b1fed;
+    cursor: pointer;
+    top: 180px;
+    left: 35%;
+    text-align: center;
+}
+
+
+
+
 
 
 /* ===== end Blog =====*/
@@ -447,5 +512,8 @@ header .hero .socials a:hover {
       background-color:#7d21ed1a;
   }
 
+  #contact .container {
+    padding: 70px 150px;
+}
 
 
