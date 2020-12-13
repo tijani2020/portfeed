@@ -9,6 +9,16 @@ html,
 body {
     margin: 0rem;
     padding: 0rem;
+    position: relative;
+}
+
+
+.underlign {
+    height: 3px;
+    background-color: #7b1fed;
+    width: 80px;
+    margin: 10px auto;
+    
 }
 
 /* =====start navbar ===== */
@@ -163,6 +173,8 @@ header .hero .socials a:hover {
 #about .container {
     padding: 0px 150px;
 }
+
+
 
 #about .container .informations {
     display: flex;
@@ -507,6 +519,12 @@ header .hero .socials a:hover {
 
 
 /* ===== end Blog =====*/
+
+
+
+
+/* ===== start contact =====*/
+
   #contact {
       height: 100vh;
       background-color:#7d21ed1a;
@@ -516,4 +534,106 @@ header .hero .socials a:hover {
     padding: 70px 150px;
 }
 
+.contact-section {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-section .contact-info,
+.contact-section .forum {
+    width: 50%;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info .info {
+    margin: 20px;
+}
+
+.contact-info .info i {
+    margin-bottom: 15px;
+    color: #7b1fed;
+    font-size: 25px;
+}
+/* == forum == */
+
+/* Style inputs with type="text",  and textareas */
+input[type=text],input[type=tel], textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 2px solid #7b1fed; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+   
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: white;
+    color: #7b1fed;
+    padding: 12px 20px;
+    border: 2px solid #7b1fed;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #7b1fed;
+    color: white;
+  }
+
+/* ===== end contact =====*/
+
+
+/* ===== start footer =====*/
+
+footer {
+    height: 150px;
+    background-color: #7b1fed;
+    color: white;
+    padding: 30px 170px;
+}
+
+
+footer .socials{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    margin: auto;
+}
+
+footer p {
+    text-align: center;
+}
+footer  a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .white-lign {
+    height: 2px;
+    background-color: #fff;
+    width: 80px;
+    margin: 20px auto;
+}
+
+
+.back-to-top {
+   position: absolute;
+   bottom: 10px;
+   right: 10px;
+   width: 50px;
+   height: 50px;
+   font-size: 25px;
+}
+/* ===== edn footer =====*/
 

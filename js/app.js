@@ -31,7 +31,7 @@ function scrollFunction() {
 
 
 
-const links = document.querySelectorAll(".menu ul a");
+const links = document.querySelectorAll(".menu ul a, .back-to-top a");
 
 for (const link of links) {
   link.addEventListener("click", clickHandler);

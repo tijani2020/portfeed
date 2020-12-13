@@ -64,6 +64,7 @@
         <div class="container">
             <div class="about-head section-head">
                 <h1>ABOUT ME</h1>
+                <div class="underlign"></div>
                 <p>I'm a full stack web developer, I have 4 years of experience building websites for clients arround the world, I build hight converting websites and landing page, using HTML CSS and JAVASCRIPT on the front end, And PHP and Node js on the back end.</p>
             </div>
             <div class="informations">
@@ -125,6 +126,7 @@
         <div class="container">
           <div class="services-head section-head">
             <h1>SERVICES</h1>
+            <div class="underlign"></div>
             <P>Take your project to the next level</P>
           </div>
           <div class="services-items">
@@ -174,6 +176,8 @@
         <div class="container">
             <div class="portfolio-head section-head">
                 <h1>PORTFOLIO</h1>
+                <div class="underlign"></div>
+            </div>
                 <div class="skills-menu">
                     <ul>
                         <li>Front End</li>
@@ -182,7 +186,6 @@
                         <li>Woocommerce</li>
                     </ul>
                 </div>
-            </div>
             <div class="projects-box">
                 <div class="project-box project1"></div>
                 <div class="project-box project2"></div>
@@ -203,6 +206,7 @@
         <div class="container">
             <div class="blog-haed section-head">
                 <h1>BLOG</h1>
+                <div class="underlign"></div>
                 <p>Discover the latest tech trend,we write about severel tech related topics such as Programming, web design, career ... </p>
             </div>
             <div class="blog-posts">
@@ -244,11 +248,42 @@
         <div class="container">
             <div class="contact-head section-head">
                 <h1>GET IN TOUCH</h1>
+                <div class="underlign"></div>
             </div>
             <div class="contact-section">
-               <div class="contact-info"></div>
+               <div class="contact-info">
+                   <div class="adress info">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <p>street 52 Crt 15 Kenitra 14250 Morocco</p> 
+                    </div>
+                   <div class="email info">
+                      <i class="far fa-envelope"></i>
+                      <p>Email : Contact@Abderrahimtijani.com</p> 
+                    </div>
+                   <div class="phone info">
+                     <i class="fas fa-phone"></i>
+                     <p>Phone : +212 621 892 048</p>  
+                    </div>
+               </div>
                <div class="forum">
                 <form action="">
+                    <div class="name">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="Your Name..">
+                    </div>
+
+                    <div class="Tel">
+                        <label for="Email">Your Phone</label>
+                        <input type="tel" id="Phone" placeholder="Your Phone..">
+                    </div>
+
+                    <div class="subject">
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
+                    </div>
+                    <div class="submit">
+                       <input type="submit" value="Submit">
+                    </div>
                 </form>
                </div>
         </div>
@@ -257,8 +292,24 @@
     <!-- ==== end contact ====-->
 
     <!-- ==== start footer ====-->
-    <footer></footer>
+    <footer>
+        <div class="container">
+            <div class="socials">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                <a href=""><i class="fab fa-pinterest-p"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="white-lign"></div>
+            <p>Copyright © 2021 Portfeed All Rights Reserved.</p>
+        </div>
+        <div class="back-to-top"><a href="#header"><i class="fas fa-chevron-up"></i></a></div>
+    </footer>
+
+    
     <!-- ==== end footer ====-->
+    
 
     <script src="/js/app.js"></script>
 </body>
