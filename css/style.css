@@ -382,6 +382,14 @@ header .hero .socials a:hover {
     align-items: center;
     justify-content: center;
     padding: 20px 0px;
+    position: relative;
+}
+
+.projects-box .view {
+    position: absolute;
+    color: #7b1fed;
+    font-size: 20px;
+    top: 45%;
 }
 
 .project-box {
