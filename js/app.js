@@ -9,7 +9,7 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         navigation.style.padding = "0.5rem 0rem";
-        navigation.style.borderBottom = "2px solid #7b1fed";
+        navigation.style.boxShadow = "0 2px 2px -2px rgba(0,0,0,.2)";
         navigation.style.backgroundColor = "#fff";
         siteName.style.color = "#7b1fed";
         logo.style.fontSize = "1rem";
@@ -62,7 +62,10 @@ var mySwiper = new Swiper('.swiper-container', {
    // pagination
    pagination: {
      el: '.swiper-pagination',
+     clickable: true,
    },
+
+
 });
 
 

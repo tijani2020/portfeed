@@ -468,15 +468,46 @@ header .hero .socials a:hover {
      
   }
 
-.swiper-container .photo img {
-        padding: 3.5px;
-        border: 1.5px solid #7b1fed;
-        border-radius: 50%;
-    }
+  .swiper-container .pic1 {
+     background: url(/Images/test1.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 150px;
+      width: 150px;
+      padding: 3.5px;
+      border: 1.5px solid #7b1fed;
+      border-radius: 300px;
+      margin: auto;
+  }
+  .swiper-container .pic2 {
+     background: url(/Images/test2.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 150px;
+      width: 150px;
+      padding: 3.5px;
+      border: 1.5px solid #7b1fed;
+      border-radius: 300px;
+      margin: auto;
+  }
+  .swiper-container .pic3 {
+     background: url(/Images/test3.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 150px;
+      width: 150px;
+      padding: 3.5px;
+      border: 1.5px solid #7b1fed;
+      border-radius: 300px;
+      margin: auto;
+  }
 
-    .swiper-pagination {
-       
-    }
+ 
+  
+
+  .swiper-pagination-bullet-active {
+      background-color: #7b1fed !important;
+  }
 
 
 
