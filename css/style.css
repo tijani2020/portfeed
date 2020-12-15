@@ -86,7 +86,7 @@ header {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url(/Images/bg1.jpeg);
+    background-image: url(/Images/bg1.webp);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -403,17 +403,17 @@ header .hero .socials a:hover {
 }
 
 .projects-box .project1 {
-    background: url(/Images/portfolio.jpeg);
+    background: url(/Images/portfolio.webp);
     background-size: cover;
     background-position: center;
 }
 .projects-box .project2 {
-    background: url(/Images/stablehair.jpeg);
+    background: url(/Images/stablehair.webp);
     background-size: cover;
     background-position: center;
 }
 .projects-box .project3 {
-    background: url(/Images/devdevshow.jpeg);
+    background: url(/Images/devdevshow.webp);
     background-size: cover;
     background-position: center;
 }
@@ -469,7 +469,7 @@ header .hero .socials a:hover {
   }
 
   .swiper-container .pic1 {
-     background: url(/Images/test1.jpeg);
+     background: url(/Images/test1.webp);
       background-size: cover;
       background-position: center;
       height: 150px;
@@ -480,7 +480,7 @@ header .hero .socials a:hover {
       margin: auto;
   }
   .swiper-container .pic2 {
-     background: url(/Images/test2.jpeg);
+     background: url(/Images/test2.webp);
       background-size: cover;
       background-position: center;
       height: 150px;
@@ -491,7 +491,7 @@ header .hero .socials a:hover {
       margin: auto;
   }
   .swiper-container .pic3 {
-     background: url(/Images/test3.jpeg);
+     background: url(/Images/test3.webp);
       background-size: cover;
       background-position: center;
       height: 150px;
@@ -560,19 +560,19 @@ header .hero .socials a:hover {
     margin-top: 20px;
 }
 .img1 {
-    background: url(/Images/post1.jpeg);
+    background: url(/Images/post1.webp);
     background-size: cover;
     height: 200px;
 }
 
 .img2 {
-    background: url(/Images/pos3.jpeg);
+    background: url(/Images/pos3.webp);
     background-size: cover;
     height: 200px;
 }
 
 .img3 {
-    background: url(/Images/post2.jpeg);
+    background: url(/Images/post2.webp);
     background-size: cover;
     height: 200px;
 }
