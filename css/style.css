@@ -340,6 +340,39 @@ header .hero .socials a:hover {
 
 /*   ==== end services ==== */
 
+/*   ==== start counters ==== */
+/* source https://codepen.io/bradtraversy/pen/poJwqOK */
+
+.counters {
+    height: 50vh;
+    padding: 50px 100px;
+    background-color: #7b1fed;
+}
+.counters .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.counters {
+    text-align: center;
+}
+.counters i {
+	color: white;
+    margin-bottom: 5px;
+    	font-size: 40px;
+
+}
+
+.counters .counter {
+	font-size: 40px;
+	margin: 10px 0;
+}
+
+
+
+/*   ==== end counters ==== */
 
 /*   ==== start portfolio ==== */
 
