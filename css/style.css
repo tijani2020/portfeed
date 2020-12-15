@@ -332,10 +332,14 @@ header .hero .socials a:hover {
       margin: 20px;
       background-color: white;
       padding: 20px;
-
+      box-shadow: 2px 2px 2px -2px rgba(0,0,0,.3);
 
   }
-  
+
+  .services-item:hover {
+    box-shadow: 2px 2px 3px 2px rgba(0,0,0,.2);
+}
+
   .services-item i {
       color: #7b1fed;
       font-size: 30px;
@@ -360,14 +364,14 @@ header .hero .socials a:hover {
 
 .counters {
     height: 50vh;
-    padding: 50px 100px;
+    padding: 100px 100px;
     background-color: #7b1fed;
 }
 
 .counters .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-around;
     color: white;
 }
 
@@ -378,13 +382,13 @@ header .hero .socials a:hover {
 .counters i {
 	color: white;
     margin-bottom: 5px;
-    	font-size: 40px;
+    	font-size: 35px;
 
 }
 
 .counters .counter {
-	font-size: 40px;
-	margin: 10px 0;
+	font-size: 30px;
+    margin: 10px ;
 }
 
 /*   ==== end counters ==== */
@@ -423,10 +427,11 @@ header .hero .socials a:hover {
     margin: 10px;
     background-color: white;
     border-radius: 5px;
-    padding: 5PX 10px;
-    border: 2px solid #7b1fed;
+    padding: 3PX 5px;
+    border: 1.5px solid #7b1fed;
     color: #7b1fed;
     cursor: pointer;
+    font-size: 15px;
 }
 
 .projects-box {
@@ -469,15 +474,16 @@ header .hero .socials a:hover {
 }
 
 .more-projects {
+    list-style: none;
+    margin: 10px;
     background-color: white;
     border-radius: 5px;
-    padding: 5PX 10px;
+    padding: 3PX 5px;
+    border: 1.5px solid #7b1fed;
     color: #7b1fed;
-    width: 150px;
-    padding: 5px 10px;
-    border: 2px solid #7b1fed;
-    margin: auto;
     cursor: pointer;
+    margin: auto;
+    width: 150px;
 }
 
 .more-projects:hover {
@@ -583,7 +589,7 @@ margin: 0px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 30px;
     
 }
 
@@ -595,6 +601,11 @@ margin: 0px 20px;
     margin: 10px;
     position: relative;
     vertical-align: center;
+    box-shadow: 2px 2px 2px -2px rgba(0,0,0,.3);
+}
+
+#blog .blog-posts .blog-post:hover {
+    box-shadow: 2px 2px 3px 2px rgba(0,0,0,.2);
 }
 
 .excerpt {
@@ -632,7 +643,7 @@ margin: 0px 20px;
     background-color: white;
     border-radius: 15px;
     padding: 5PX 10px;
-    border: 2px solid #7b1fed;
+    border: 1.5px solid #7b1fed;
     color: #7b1fed;
     cursor: pointer;
     top: 180px;
