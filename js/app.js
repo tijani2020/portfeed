@@ -1,3 +1,6 @@
+
+/* ====== sticky navbar on scroll ======== */
+
 const navigation = document.getElementById('navbar')
 const logo = document.getElementById('logo')
 const siteName = document.getElementById('sitename')
@@ -46,9 +49,11 @@ function clickHandler(e) {
   });
 }
 
+/* ====== sticky navbar on scroll ======== */
 
 
-/* for testimonials from swiper */
+/* ====== for testimonials from swiper ======== */
+
 var mySwiper = new Swiper('.swiper-container', {
   // autoplay
   autoplay: {
@@ -65,19 +70,17 @@ var mySwiper = new Swiper('.swiper-container', {
      clickable: true,
    },
 
-
 });
 
 
-/*  for testimonials from swiper */
+/* ======= for testimonials from swiper ======= */
 
 
 
 
-/*   ==== start counters ==== */
+/*   =========== start counters ================ */
 
 /* source https://codepen.io/bradtraversy/pen/poJwqOK */
-
 
 
 const counters = document.querySelectorAll('.counter');
@@ -108,4 +111,4 @@ counters.forEach(counter => {
 	updateCount();
 });
 
-/*   ==== end counters ==== */
+/*   ================== end counters ============= */

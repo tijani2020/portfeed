@@ -12,7 +12,6 @@ body {
     position: relative;
 }
 
-
 .underlign {
     height: 3px;
     background-color: #7b1fed;
@@ -22,6 +21,7 @@ body {
 }
 
 /* =====start navbar ===== */
+
 #navbar {
     vertical-align: middle;
     padding: 1rem 0rem;
@@ -43,11 +43,11 @@ body {
     
 }
 
-
 #navbar #logo a {
     text-decoration: none;
    color: white;
 }
+
 #navbar #logo h1 {
 
     letter-spacing: 0.4rem;
@@ -56,6 +56,7 @@ body {
 #navbar .menu {
     position: relative;
 }
+
 #navbar .menu ul {
     display: flex; 
     float: left;
@@ -66,17 +67,19 @@ body {
     margin: 0.5rem;
 }
 
-
 #whitelink li a {
     text-decoration: none;
     color: white;
 }
+
 #blacklink li a {
     text-decoration: none;
     color: #7b1fed;
 }
 
 /* ===== end navbar ===== */
+
+
 
 
 
@@ -92,7 +95,6 @@ header {
     justify-content: center;
     align-items: center;
 }
-
 
 .overlay {
     position: absolute;
@@ -115,6 +117,7 @@ header {
     border-radius: 50%;
 
   }
+
 header .hero .photo img {
     padding: 3.5px;
     border: 1.5px solid white;
@@ -165,6 +168,7 @@ header .hero .socials a:hover {
 
 
 
+
 /* ===== start about ===== */
 
 #about {
@@ -177,8 +181,6 @@ header .hero .socials a:hover {
 #about .container {
     padding: 0px 150px;
 }
-
-
 
 #about .container .informations {
     display: flex;
@@ -196,6 +198,7 @@ header .hero .socials a:hover {
     text-align: center;
     font-size: 25px;
 }
+
 .section-head h1 {
     font-size: 45px;
     color: #7b1fed;
@@ -205,14 +208,15 @@ header .hero .socials a:hover {
     margin:  30px 0px;
 }
 
-
 .info .detail .detail-item {
     margin: 25px 0px;
 }
+
 .info .detail .detail-item i {
     margin-right: 15px;
     color: #7b1fed;
 }
+
 
 /*   ==skill== */
 .skill .container {
@@ -235,15 +239,19 @@ header .hero .socials a:hover {
   .skills p {
       margin-top: 8px;
   }
+
   .html {width: 90%; 
     animation: htmlpercent 1s  100ms  ease-in;
 } 
+
   .css {width: 80%; 
     animation: csspercent 1s  200ms  ease-in;
 } 
+
   .js {width: 65%; 
     animation: jspercent 1s  300ms  ease-in;
 } 
+
   .php {width: 60%;
     animation: phppercent 1s  400ms  ease-in;
 }
@@ -258,6 +266,7 @@ header .hero .socials a:hover {
         width: 90%;
     }
 }
+
 @keyframes csspercent {
     from {
         width: 0%;
@@ -267,6 +276,7 @@ header .hero .socials a:hover {
         width: 80%;
     }
 }
+
 @keyframes jspercent {
     from {
         width: 0%;
@@ -276,6 +286,7 @@ header .hero .socials a:hover {
         width: 65%;
     }
 }
+
 @keyframes phppercent {
     from {
         width: 0%;
@@ -290,6 +301,8 @@ header .hero .socials a:hover {
 /*   ==== end about ==== */
 
 
+
+
 /*   ==== start services ==== */
   #services {
       height: 100vh;
@@ -302,9 +315,11 @@ header .hero .socials a:hover {
   #services .container {
       padding: 0px 100px;
   }
+
   #services .services-head {
       margin: 50px 0px;
   }
+
   .services-items {
       display: flex;
       align-items: center;
@@ -319,11 +334,12 @@ header .hero .socials a:hover {
       padding: 20px;
 
 
-  }.services-item i {
+  }
+  
+  .services-item i {
       color: #7b1fed;
       font-size: 30px;
   }
-
 
   .services-item h3 {
       color: gray;
@@ -334,11 +350,10 @@ header .hero .socials a:hover {
       margin-bottom: 15px;
   }
 
-
-
-
-
 /*   ==== end services ==== */
+
+
+
 
 /*   ==== start counters ==== */
 /* source https://codepen.io/bradtraversy/pen/poJwqOK */
@@ -348,6 +363,7 @@ header .hero .socials a:hover {
     padding: 50px 100px;
     background-color: #7b1fed;
 }
+
 .counters .container {
     display: flex;
     align-items: center;
@@ -358,6 +374,7 @@ header .hero .socials a:hover {
 .counters {
     text-align: center;
 }
+
 .counters i {
 	color: white;
     margin-bottom: 5px;
@@ -370,9 +387,9 @@ header .hero .socials a:hover {
 	margin: 10px 0;
 }
 
-
-
 /*   ==== end counters ==== */
+
+
 
 /*   ==== start portfolio ==== */
 
@@ -389,7 +406,6 @@ header .hero .socials a:hover {
     margin: 50px 0px;
     font-size: 18px;
 }
-
 
 #portfolio .skills-menu ul {
     display: flex;
@@ -412,7 +428,6 @@ header .hero .socials a:hover {
     color: #7b1fed;
     cursor: pointer;
 }
-
 
 .projects-box {
     display: flex;
@@ -440,17 +455,18 @@ header .hero .socials a:hover {
     background-size: cover;
     background-position: center;
 }
+
 .projects-box .project2 {
     background: url(/Images/stablehair.webp);
     background-size: cover;
     background-position: center;
 }
+
 .projects-box .project3 {
     background: url(/Images/devdevshow.webp);
     background-size: cover;
     background-position: center;
 }
-
 
 .more-projects {
     background-color: white;
@@ -463,18 +479,16 @@ header .hero .socials a:hover {
     margin: auto;
     cursor: pointer;
 }
+
 .more-projects:hover {
     color: white;
     background-color: #7b1fed;
 }
 
-
 .more-projects i {
     font-size: 20px;
     margin-left: 3px;
 }
-
-
 
   /*   ==== end portfolio ==== */
 
@@ -494,11 +508,13 @@ header .hero .socials a:hover {
     width: 600px;
     height: 350px;
   }
+
   .swiper-slide p i {
 font-size: 30px;
 color: #7b1fed;
 margin: 0px 20px;
   }
+
   .swiper-slide{text-align: center;}
   .swiper-slide h3 {
       margin: 20px auto;
@@ -516,6 +532,7 @@ margin: 0px 20px;
       border-radius: 300px;
       margin: auto;
   }
+
   .swiper-container .pic2 {
      background: url(/Images/test1.webp);
       background-size: cover;
@@ -527,6 +544,7 @@ margin: 0px 20px;
       border-radius: 300px;
       margin: auto;
   }
+
   .swiper-container .pic3 {
      background: url(/Images/test3.webp);
       background-size: cover;
@@ -539,14 +557,9 @@ margin: 0px 20px;
       margin: auto;
   }
 
- 
-  
-
   .swiper-pagination-bullet-active {
       background-color: #7b1fed !important;
   }
-
-
 
 /*   ==== end testimonials ==== */
 
@@ -574,7 +587,6 @@ margin: 0px 20px;
     
 }
 
-
 #blog .blog-posts .blog-post {
     width: 30%;
     display: flex;
@@ -584,7 +596,6 @@ margin: 0px 20px;
     position: relative;
     vertical-align: center;
 }
-
 
 .excerpt {
     background-color: hsl(267, 85%, 53%, 0.05);
@@ -596,6 +607,7 @@ margin: 0px 20px;
 .excerpt p {
     margin-top: 20px;
 }
+
 .img1 {
     background: url(/Images/post1.webp);
     background-size: cover;
@@ -627,11 +639,6 @@ margin: 0px 20px;
     left: 35%;
     text-align: center;
 }
-
-
-
-
-
 
 /* ===== end Blog =====*/
 
@@ -717,7 +724,6 @@ footer {
     padding: 30px 170px;
 }
 
-
 footer .socials{
     display: flex;
     align-items: center;
@@ -729,6 +735,7 @@ footer .socials{
 footer p {
     text-align: center;
 }
+
 footer  a {
     color: white;
     text-decoration: none;
@@ -740,7 +747,6 @@ footer .white-lign {
     width: 80px;
     margin: 20px auto;
 }
-
 
 .back-to-top {
    position: absolute;
