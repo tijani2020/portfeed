@@ -494,7 +494,11 @@ header .hero .socials a:hover {
     width: 600px;
     height: 350px;
   }
-
+  .swiper-slide p i {
+font-size: 30px;
+color: #7b1fed;
+margin: 0px 20px;
+  }
   .swiper-slide{text-align: center;}
   .swiper-slide h3 {
       margin: 20px auto;
