@@ -415,7 +415,7 @@ header .hero .socials a:hover {
 }
 
 #portfolio .skills-menu {
-    margin: 50px 0px;
+    margin-top: 50px;
     font-size: 18px;
 }
 
@@ -458,27 +458,44 @@ header .hero .socials a:hover {
 }
 
 .project-box {
-    width: 25%;
-    height: 200px;
+    width: 200px;
+    height:300px;
     margin: 10px;
+    background-position: top;
+    transition-duration: 5000ms;
+    box-shadow: 3px 3px 3px -1px rgba(0,0,0,.4);
+   
 }
 
 .projects-box .project1 {
-    background: url(/Images/portfolio.webp);
+    background: url(/Images/portfolio-screen.webp);
     background-size: cover;
-    background-position: center;
 }
 
 .projects-box .project2 {
-    background: url(/Images/stablehair.webp);
+    background: url(/Images/devdevshow-screen.webp);
     background-size: cover;
-    background-position: center;
+    background-position: top;
+    
+}
+.projects-box .project3 {
+    background: url(/Images/p4d-sreen.webp);
+    background-size: cover;
+    background-position: top;
 }
 
-.projects-box .project3 {
-    background: url(/Images/devdevshow.webp);
+.projects-box .project4 {
+    background: url(/Images/stablehair-screen.webp);
     background-size: cover;
-    background-position: center;
+    background-position: top;
+}
+
+.projects-box .project1:hover,
+.projects-box .project2:hover,
+.projects-box .project3:hover,
+.projects-box .project4:hover {
+    background-position: bottom;
+
 }
 
 .more-projects {
@@ -606,7 +623,7 @@ margin: 0px 20px;
     display: flex;
     flex-direction: column;
     height: 400px;
-    margin: 10px;
+    margin: 20px;
     position: relative;
     vertical-align: center;
     box-shadow: 2px 2px 2px -2px rgba(0,0,0,.3);
