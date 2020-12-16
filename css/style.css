@@ -768,16 +768,16 @@ footer .container {
     position: absolute;
     bottom: 10px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
 .Right-footer {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    justify-content: space-between;
-    margin: 0px 20px;
+    text-align: center;
+    height: 150px;
+    margin-top: 50px;
+    margin-left: 50px;
 }
 
 footer.contact-info {
@@ -801,7 +801,6 @@ footer .socials{
     align-items: center;
     justify-content: space-between;
     width: 200px;
-    margin: 0px 30px;
 }
 
 footer p {
@@ -817,7 +816,7 @@ footer .white-lign {
     height: 2px;
     background-color: #fff;
     width: 80px;
-    margin: 20px auto;
+    margin: 15px auto;
 }
 
 .back-to-top {
