@@ -482,7 +482,7 @@ header .hero .socials a:hover {
 }
 
 .projects-box .project4 {
-    background: url(/Images/stablehair-screen.webp);
+    background: url(/Images/portfolio-onepage.webp);
     background-size: cover;
     background-position: top;
 }
@@ -801,6 +801,7 @@ footer .socials{
     align-items: center;
     justify-content: space-between;
     width: 200px;
+    margin: auto;
 }
 
 footer p {
