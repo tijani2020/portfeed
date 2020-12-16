@@ -619,20 +619,29 @@ margin: 0px 20px;
     width: 30%;
     display: flex;
     flex-direction: column;
-    height: 400px;
+    height: 380px;
     margin: 20px;
     position: relative;
     vertical-align: center;
     box-shadow: 2px 2px 2px -2px rgba(0,0,0,.3);
+    /**/
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    overflow: hidden;
 }
+
 
 #blog .blog-posts .blog-post:hover {
     box-shadow: 2px 2px 3px 2px rgba(0,0,0,.2);
-}
+    -webkit-transform: scale(0.08);
+    transform: scale(01.1);
+    }
 
 .excerpt {
     background-color: hsl(267, 85%, 53%, 0.05);
-    height: 50%;
+    height: 45%;
     padding: 20px;
     text-align: center;
 }
@@ -645,6 +654,7 @@ margin: 0px 20px;
     background: url(/Images/post1.webp);
     background-size: cover;
     height: 200px;
+    background-position: center;    
 }
 
 .img2 {
