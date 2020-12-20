@@ -1,4 +1,3 @@
-
 /*  for animation on scroll from AOS */
 
  AOS.init();

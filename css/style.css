@@ -245,63 +245,44 @@ header .hero .socials a:hover {
       margin-top: 8px;
   }
 
-  .html {
-    width: 90%; 
-    animation: htmlpercent 1s  100ms  ease-in;
-} 
-
-  .css {width: 80%; 
-    animation: csspercent 1s  200ms  ease-in;
-} 
-
-  .js {width: 65%; 
-    animation: jspercent 1s  300ms  ease-in;
-} 
-
-  .php {width: 60%;
-    animation: phppercent 1s  400ms  ease-in;
-}
 /*   ==skill animation == */
 
-@keyframes htmlpercent {
-    from {
-        width: 0%;
-    }
-
-    to {
-        width: 90%;
-    }
+[data-aos="html-animation"] {
+    width: 0%;
 }
 
-@keyframes csspercent {
-    from {
-        width: 0%;
-    }
-
-    to {
-        width: 80%;
-    }
+[data-aos="html-animation"].aos-animate {
+    width: 75%;
 }
 
-@keyframes jspercent {
-    from {
-        width: 0%;
-    }
 
-    to {
-        width: 65%;
-    }
+[data-aos="css-animation"] {
+    width: 0%;
 }
 
-@keyframes phppercent {
-    from {
-        width: 0%;
-    }
-
-    to {
-        width: 60%;
-    }
+[data-aos="css-animation"].aos-animate {
+    width: 90%;
 }
+
+
+[data-aos="js-animation"] {
+    width: 0%;
+}
+
+[data-aos="js-animation"].aos-animate {
+    width: 80%;
+}
+
+
+[data-aos="php-animation"] {
+    width: 0%;
+}
+
+[data-aos="php-animation"].aos-animate {
+    width: 90%;
+}
+
+
 /*   ==skill== */
 
 /*   ==== end about ==== */
