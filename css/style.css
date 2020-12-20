@@ -691,12 +691,12 @@ margin: 0px 20px;
 
 .contact-section .map {
     box-shadow: 2px 2px 2px -2px rgba(0,0,0,.3);
+    height: 370px;
 }
 
 .contact-section .map,
 .contact-section .forum {
     width: 50%;
-    height: 400px;
     margin: 0px 20px;
 }
 
@@ -716,14 +716,16 @@ margin: 0px 20px;
 
 input[type=text],input[type=email], textarea {
     width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
+    padding: 15px; /* Some padding */ 
     border: 2px solid #7b1fed; /* Gray border */
     border-radius: 30px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
+    outline: none;
    
   }
+  
   
   /* Style the submit button with a specific background color etc */
   input[type=submit] {
@@ -733,6 +735,7 @@ input[type=text],input[type=email], textarea {
     border: 2px solid #7b1fed;
     border-radius: 30px;
     cursor: pointer;
+    outline: none;
   }
   
   /* When moving the mouse over the submit button, add a darker green color */
