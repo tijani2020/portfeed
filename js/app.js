@@ -1,4 +1,8 @@
 
+/*  for animation on scroll from AOS */
+
+ AOS.init();
+
 /* ====== sticky navbar on scroll ======== */
 
 const navigation = document.getElementById('navbar')
