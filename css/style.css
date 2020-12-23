@@ -390,91 +390,88 @@ header .hero .socials a:hover {
   
 #portfolio .container {
     padding: 70px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
 }
 
-#portfolio .skills-menu {
+#skills-menu {
+    display: flex;
+    justify-content: space-between;
+    color: gray;
     margin-top: 50px;
-    font-size: 18px;
 }
 
-#portfolio .skills-menu ul {
+
+
+.skills-menu-item {
+    cursor: pointer;
+}
+
+
+#skills-menu ul {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#portfolio .skills-menu ul li:first-child {
-    color: white;
-    background-color: #7b1fed;
+#skills-menu ul li:first-child {
+    background-color: #7b1fed;border-radius: 5px;padding: 3PX 5px;border: 1.5px solid #7b1fed;color: white;
+    
 }
 
-#portfolio .skills-menu ul li {
+#skills-menu ul li {
     list-style: none;
     margin: 10px;
-    background-color: white;
-    border-radius: 5px;
-    padding: 3PX 5px;
-    border: 1.5px solid #7b1fed;
-    color: #7b1fed;
     cursor: pointer;
     font-size: 15px;
+    background-color: white;border-radius: 5px;padding: 3PX 5px;border: 1.5px solid #7b1fed;color: #7b1fed;
 }
 
-.projects-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 0px;
-    position: relative;
-}
-
-.projects-box .view {
-    position: absolute;
-    color: #7b1fed;
-    font-size: 20px;
-    top: 45%;
-}
 
 .project-box {
     width: 200px;
     height:300px;
     margin: 10px;
     background-position: top;
-    transition-duration: 5000ms;
-    box-shadow: 3px 3px 3px -1px rgba(0,0,0,.4);
    
 }
 
-.projects-box .project1 {
+
+#projects-box .Wordpress,
+#projects-box .landingpage {
+    display: none;
+}
+
+.projects {
+    display: flex;
+}
+
+.project1 {
     background: url(/Images/portfolio-screen.webp);
     background-size: cover;
 }
 
-.projects-box .project2 {
+.project2 {
     background: url(/Images/devdevshow-screen.webp);
     background-size: cover;
     background-position: top;
     
 }
-.projects-box .project3 {
+.project3 {
     background: url(/Images/p4d-sreen.webp);
     background-size: cover;
     background-position: top;
 }
 
-.projects-box .project4 {
-    background: url(/Images/portfolio-onepage.webp);
-    background-size: cover;
-    background-position: top;
-}
 
-.projects-box .project1:hover,
-.projects-box .project2:hover,
-.projects-box .project3:hover,
-.projects-box .project4:hover {
+#projects-box .project1:hover,
+#projects-box .project2:hover,
+#projects-box .project3:hover,
+#projects-box .project4:hover {
     background-position: bottom;
-
+    transition: all 4000ms;
 }
 
 .more-projects {
@@ -486,7 +483,7 @@ header .hero .socials a:hover {
     border: 1.5px solid #7b1fed;
     color: #7b1fed;
     cursor: pointer;
-    margin: auto;
+    margin-top: 40px;
     width: 150px;
 }
 
@@ -572,7 +569,6 @@ margin: 0px 20px;
   }
 
 /*   ==== end testimonials ==== */
-
 
 
 

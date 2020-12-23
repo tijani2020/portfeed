@@ -115,3 +115,48 @@ counters.forEach(counter => {
 });
 
 /*   ================== end counters ============= */
+
+
+
+
+// Navigate projects start 
+
+
+const skillsMenu = document.getElementById('skills-menu');
+const menuItem = document.getElementsByClassName('skills-menu-item');
+const projects = document.getElementsByClassName('projects');
+
+
+function styleSkillsMunuItem (a,b,c) {
+    a.style.cssText = 'background-color: #7b1fed;border-radius: 5px;padding: 3PX 5px;border: 1.5px solid #7b1fed;color: white;';
+    b.style.cssText = 'background-color: white;border-radius: 5px;padding: 3PX 5px;border: 1.5px solid #7b1fed;color: #7b1fed;';
+    c.style.cssText = 'background-color: white;border-radius: 5px;padding: 3PX 5px;border: 1.5px solid #7b1fed;color: #7b1fed;';
+}
+
+function displayProjectSection (e,f,g) {
+        e.style.display = 'flex';
+        f.style.display = 'none';
+        g.style.display = 'none';
+}
+
+skillsMenu.addEventListener('click', event => {
+   
+       if (event.target === menuItem[0]) {    
+           
+                 styleSkillsMunuItem (menuItem[0],menuItem[1],menuItem[2])
+                 displayProjectSection (projects[0],projects[2],projects[1])
+        }  
+
+       else if (event.target === menuItem[1]) {  
+
+                 styleSkillsMunuItem (menuItem[1],menuItem[0],menuItem[2])
+                 displayProjectSection (projects[1],projects[0],projects[2])
+        }  
+
+       else   {
+                  styleSkillsMunuItem (menuItem[2],menuItem[0],menuItem[1])
+                  displayProjectSection (projects[2],projects[0],projects[1])
+        }     
+});
+
+// Navigate projects start
