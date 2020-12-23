@@ -348,9 +348,9 @@ header .hero .socials a:hover {
 /* source https://codepen.io/bradtraversy/pen/poJwqOK */
 
 .counters {
-    height: 50vh;
+    height: 500px;
     padding: 100px 100px;
-    background-color: #7b1fed;
+    background: url(../Images/counterbg.png); 
 }
 
 .counters .container {
