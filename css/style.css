@@ -350,7 +350,7 @@ header .hero .socials a:hover {
 .counters {
     height: 500px;
     padding: 100px 100px;
-    background: url(../Images/counterbg.png); 
+    background: url(../Images/counterbg.webp); 
 }
 
 .counters .container {
