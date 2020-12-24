@@ -36,10 +36,9 @@ body {
 #navbar .container {
     position: relative;
     display: flex;
-    margin: 0rem 4.7rem;
-    padding: 0rem 0.94rem;
     justify-content: space-between;
     align-items: center;
+    margin: 0px 5%;
     
 }
 
@@ -84,12 +83,17 @@ body {
 
 @media screen and (max-width: 768px) {
 
+    #navbar .container {
+       flex-direction: column;
+        
+    }
+  
 }
 
 
 /* Mobile */ 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
 
 }
 
@@ -180,13 +184,15 @@ header .hero .socials a:hover {
 /* Tablet  */ 
 
 @media screen and (max-width: 768px) {
-
+    header .hero h1 {
+        font-size: 35px;
+    }
 }
 
 
 /* Mobile */ 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
 
 }
 /* ===== end header ===== */
@@ -204,13 +210,13 @@ header .hero .socials a:hover {
 }
 
 #about .container {
-    padding: 0px 150px;
+    padding: 0px 5%;
 }
 
 #about .container .informations {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     margin: 0%;
 }
 
@@ -327,7 +333,7 @@ header .hero .socials a:hover {
 
 /*   ==== start services ==== */
   #services {
-      height: 100vh;
+      height: 100%;
       background-color: #bb84ff1a;
       display: flex;
       align-items: center;
@@ -335,21 +341,23 @@ header .hero .socials a:hover {
   }
 
   #services .container {
-      padding: 0px 100px;
+      padding: 0px 5%;
   }
 
   #services .services-head {
-      margin: 50px 0px;
+      margin: 50px 0px 30px 0px;
   }
 
   .services-items {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      
   }
 
   .services-item {
-      width: 30%;
+      width: 26%;
       text-align: center;
       margin: 20px;
       background-color: white;
@@ -382,6 +390,9 @@ header .hero .socials a:hover {
 /* Tablet  */ 
 
 @media screen and (max-width: 768px) {
+    .services-item {
+        width: 40%;
+    }
 
 }
 
@@ -401,7 +412,7 @@ header .hero .socials a:hover {
 
 .counters {
     height: 500px;
-    padding: 100px 100px;
+    padding: 80px 5%;
     background: url(../Images/counterbg.webp); 
 }
 
@@ -430,13 +441,6 @@ header .hero .socials a:hover {
 
 /* Media querie */ 
 
-/* Tablet  */ 
-
-@media screen and (max-width: 768px) {
-
-}
-
-
 /* Mobile */ 
 
 @media screen and (max-width: 480px) {
@@ -449,11 +453,11 @@ header .hero .socials a:hover {
 /*   ==== start portfolio ==== */
 
   #portfolio {
-      height: 100vh;
+      height: 100%;
   }
   
 #portfolio .container {
-    padding: 70px 0px;
+    padding: 70px 5%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -483,7 +487,8 @@ header .hero .socials a:hover {
 
 #skills-menu ul li:first-child {
     background-color: #7b1fed;
-    border-radius: 5px;padding: 3PX 5px;
+    border-radius: 5px;
+    padding: 3PX 5px;
     border: 1.5px solid #7b1fed;
     color: white;
     
@@ -505,7 +510,7 @@ header .hero .socials a:hover {
 .project-box {
     width: 200px;
     height:300px;
-    margin: 10px;
+    margin: 20px;
     background-position: top;
     box-shadow: 2px 2px 2px -2px rgba(0,0,0,.5);
    
@@ -519,7 +524,10 @@ header .hero .socials a:hover {
 
 .projects {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
+
 
 .project1 {
     background: url(/Images/portfolio-screen.webp);
@@ -608,7 +616,7 @@ header .hero .socials a:hover {
   }
 
 .swiper-container {
-    width: 600px;
+    width: 85%;
     height: 350px;
   }
 
@@ -618,7 +626,10 @@ color: #7b1fed;
 margin: 0px 20px;
   }
 
-  .swiper-slide{text-align: center;}
+  .swiper-slide{
+      text-align: center;
+    }
+    
   .swiper-slide h3 {
       margin: 20px auto;
      
@@ -660,6 +671,10 @@ margin: 0px 20px;
       margin: auto;
   }
 
+  .swiper-pagination-bullets{
+      margin-top: 20px;
+     
+  }
   .swiper-pagination-bullet-active {
       background-color: #7b1fed !important;
   }
@@ -693,13 +708,13 @@ margin: 0px 20px;
 }
 
 #blog .container {
-    padding: 70px 150px;
+    padding: 70px 5%;
 }
 
 #blog .blog-posts {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     margin-top: 30px;
     
 }
@@ -713,20 +728,8 @@ margin: 0px 20px;
     position: relative;
     vertical-align: center;
     box-shadow: 2px 2px 2px -2px rgba(0,0,0,.3);
-    /**/
-    -webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
-    overflow: hidden;
 }
 
-
-#blog .blog-posts .blog-post:hover {
-    box-shadow: 2px 2px 3px 2px rgba(0,0,0,.2);
-    -webkit-transform: scale(0.08);
-    transform: scale(1.1);
-    }
 
 .excerpt {
     background-color: hsl(267, 85%, 53%, 0.05);
@@ -759,7 +762,7 @@ margin: 0px 20px;
 }
 
 .topic {
-    width: 30%;
+    width: 100px;
     position: absolute;
     background-color: white;
     border-radius: 15px;
@@ -768,7 +771,7 @@ margin: 0px 20px;
     color: #7b1fed;
     cursor: pointer;
     top: 180px;
-    left: 35%;
+    margin: auto;
     text-align: center;
 }
 
@@ -779,7 +782,9 @@ margin: 0px 20px;
 /* Tablet  */ 
 
 @media screen and (max-width: 768px) {
-
+    #blog .blog-posts .blog-post {
+        width: 45%;
+    }
 }
 
 
@@ -798,12 +803,12 @@ margin: 0px 20px;
 /* ===== start contact =====*/
 
   #contact {
-      height: 100vh;
+      height: 100%;
       background-color:#7d21ed1a;
   }
 
   #contact .container {
-    padding: 70px 120px;
+    padding: 70px 8%;
 }
 
 .contact-section {
@@ -875,6 +880,15 @@ input[type=text],input[type=email], textarea {
 /* Tablet  */ 
 
 @media screen and (max-width: 768px) {
+    .contact-section {
+        flex-direction: column-reverse;
+    }
+
+    .contact-section .map,
+.contact-section .forum {
+    width: 80%;
+    margin: 20px;
+}
 
 }
 
@@ -893,7 +907,7 @@ footer {
     position: relative;
     height: 300px;
     color: white;
-    padding: 20px 170px;
+    padding: 20px 5%;
     background-image: url(/Images/footer-bg.webp);
     background-size: cover;
     background-color: #7d21ed1a;
