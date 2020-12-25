@@ -317,6 +317,9 @@ header .hero .socials a:hover {
 /* Tablet  */ 
 
 @media screen and (max-width: 768px) {
+    #about {
+        padding-top: 70px;     
+    }
 
 }
 
@@ -337,7 +340,7 @@ header .hero .socials a:hover {
       background-color: #bb84ff1a;
       display: flex;
       align-items: center;
-      
+      padding-top: 20px;     
   }
 
   #services .container {
@@ -345,7 +348,7 @@ header .hero .socials a:hover {
   }
 
   #services .services-head {
-      margin: 50px 0px 30px 0px;
+      margin: 50px 0px 15px 0px;
   }
 
   .services-items {
@@ -390,6 +393,9 @@ header .hero .socials a:hover {
 /* Tablet  */ 
 
 @media screen and (max-width: 768px) {
+    #services {
+        padding-top: 60px;     
+    }
     .services-item {
         width: 40%;
     }
@@ -482,8 +488,8 @@ header .hero .socials a:hover {
     display: flex;
     justify-content: space-between;
     color: gray;
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 15px;
 }
 
 
@@ -603,6 +609,9 @@ header .hero .socials a:hover {
 /* Tablet  */ 
 
 @media screen and (max-width: 768px) {
+    #portfolio {
+        padding-top: 50px;     
+    }
 
 }
 
@@ -795,6 +804,10 @@ margin: 0px 20px;
 /* Tablet  */ 
 
 @media screen and (max-width: 768px) {
+    #blog {
+        padding-top: 30px;     
+    }
+
     #blog .blog-posts .blog-post {
         width: 45%;
     }
@@ -895,6 +908,11 @@ input[type=text],input[type=email], textarea {
 /* Tablet  */ 
 
 @media screen and (max-width: 768px) {
+
+    #contact {
+        padding-top: 50px;     
+    }
+
     .contact-section {
         flex-direction: column-reverse;
     }
