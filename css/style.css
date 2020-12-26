@@ -326,7 +326,6 @@ header .hero .socials a:hover {
     width: 75%;
 }
 
-
 [data-aos="css-animation"] {
     width: 0%;
 }
@@ -335,7 +334,6 @@ header .hero .socials a:hover {
     width: 90%;
 }
 
-
 [data-aos="js-animation"] {
     width: 0%;
 }
@@ -343,7 +341,6 @@ header .hero .socials a:hover {
 [data-aos="js-animation"].aos-animate {
     width: 80%;
 }
-
 
 [data-aos="php-animation"] {
     width: 0%;
@@ -436,21 +433,17 @@ header .hero .socials a:hover {
 
 /* desktop  */ 
 
-
-
 @media screen and (min-width: 768px)  {
     .services-item {
         width: 26%;
     }
 }
 
-
 /* tablet */ 
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
     .services-item {
-        width: 40%;
-        
+        width: 40%;  
     }
 }
 /*   ==== end services ==== */
@@ -463,7 +456,7 @@ header .hero .socials a:hover {
 
 #counters {
     
-    height: 300px;
+    height: 650px;
     padding: 25px 5%;
     background: url(../Images/bg-counter.svg); 
     text-align: center;
@@ -474,20 +467,21 @@ header .hero .socials a:hover {
 #counters .container {
     display: flex;
     align-items: center;
-    justify-content:space-around;
+    justify-content:space-between;
     color: white;
-    flex-wrap: wrap;
+   flex-direction: column;
+   height: 100%;
 }
 
 #counter-item {
-    width: 20%;
-    margin-bottom: 25px;
+    width: 85%;
+    margin-bottom: 10px;
 }
 
 #counters i {
 	color: white;
     margin-bottom: 5px;
-    	font-size: 35px;
+    font-size: 35px;
 
 }
 
@@ -500,14 +494,33 @@ header .hero .socials a:hover {
 
 /* Mobile */ 
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    #counters {
+        height: 450px;
+    }
+    
+    #counters .container {
+       
+       flex-direction: row;
+       flex-wrap: wrap;
+    }
+    .counter-item {
+        width: 45%;
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {
     #counters {
         height: 350px;
     }
-    
+    #counters .container {
+        flex-direction: row;
+        
+     }
     .counter-item {
-        width: 45%;
-        font-size: 10px;
+        width: 20%;
+        font-size: 20px;
     }
 }
 
