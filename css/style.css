@@ -404,7 +404,7 @@ header .hero .socials a:hover {
   }
 
   .services-item {
-      width: 26%;
+      width: 80%;
       text-align: center;
       margin: 20px;
       background-color: white;
@@ -434,27 +434,24 @@ header .hero .socials a:hover {
 
   /* Media querie */ 
 
-/* Tablet  */ 
+/* desktop  */ 
 
-@media screen and (max-width: 768px) {
-    #services {
-        padding-top: 60px;     
-    }
+
+
+@media screen and (min-width: 768px)  {
     .services-item {
-        width: 40%;
+        width: 26%;
     }
 }
 
 
+/* tablet */ 
 
-/* Mobile */ 
-
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
     .services-item {
-        width: 80%;
+        width: 40%;
         
     }
-
 }
 /*   ==== end services ==== */
 
