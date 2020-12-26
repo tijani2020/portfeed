@@ -187,7 +187,7 @@ header .hero .photo img {
 
 header .hero h1 {
     color: white;
-    font-size: 35px;
+    font-size: 25px;
 }
 
 header .hero h3 {
@@ -237,7 +237,10 @@ header .hero .socials a:hover {
 
 /* Mobile */ 
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 480px) and (max-width: 768px)  {
+    header .hero h1 {
+        font-size: 35px;
+    }
 
 }
 /* ===== end header ===== */
