@@ -97,6 +97,7 @@ color: #7b1fed;
     position: absolute;
     z-index: 1;
     width: 100%;
+    display: none;
 }
 
 #mobile-nav ul li  {
@@ -128,7 +129,7 @@ color: #7b1fed;
     }
     
     #navbar .menu {
-        display: block;
+        display: none;
     }
 
     #hamberger {
