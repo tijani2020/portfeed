@@ -77,17 +77,40 @@ body {
 }
 
 
+#hamberger {
+    display: none;
+    color: #7b1fed;
+    font-size: 20px;
+}
+
+
+#mobile-nav {
+    display: none;
+    background-color: white;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+#mobile-nav ul li  {
+    list-style: none;
+}
+
+#mobile-nav ul li a {
+    display: block;
+    margin: 5px;
+    text-decoration: none;
+    color: #7b1fed;
+}
+
+
 /* Media querie */ 
 
 /* Tablet  */ 
 
 @media screen and (max-width: 768px) {
-
     #navbar .container {
-       flex-direction: column;
-        
+       flex-direction: column;        
     }
-  
 }
 
 
@@ -95,6 +118,33 @@ body {
 
 @media screen and (max-width: 600px) {
 
+    #navbar {
+        padding: 0.5rem 0rem;
+        font-size: 1rem;
+        box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+        
+    }
+
+    #sitename {
+        color: #7b1fed;
+    }
+
+    #navbar .menu {
+        display: none;
+    }
+
+    #hamberger {
+        display: block;
+    }
+    #navbar .container {
+        flex-direction: row;
+         
+     }
+
+    #mobile-nav {
+        display: block;
+    }
+    
 }
 
 

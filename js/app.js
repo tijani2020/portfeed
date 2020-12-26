@@ -13,7 +13,7 @@ window.onscroll = function() {scrollFunction()};
 
 
 function scrollFunction() {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100)  {
         navigation.style.padding = "0.5rem 0rem";
         navigation.style.boxShadow = "0 2px 2px -2px rgba(0,0,0,.2)";
         navigation.style.backgroundColor = "#fff";
@@ -22,15 +22,18 @@ function scrollFunction() {
         ulLink.id = "blacklink";
 
     }
-
-    else {
+/*
+    else if (window.matchMedia("(max-width: 600px)")) {
+      siteName.style.color = "#7b1fed";
+    }
+*/
+    else  {
         navigation.style.padding = "1rem 0rem";
         navigation.style.borderBottom = "none";
         logo.style.fontSize = "1.5rem";
         siteName.style.color = "#fff";
         navigation.style.backgroundColor = "transparent";
         ulLink.id = "whitelink";
-
     }
 
 }
@@ -160,3 +163,27 @@ skillsMenu.addEventListener('click', event => {
 });
 
 // Navigate projects start
+
+
+
+
+
+// mobile nav start
+
+const hamberger = document.getElementById('hamberger')
+const navicone = document.getElementById('navicone')
+const mobileNav = document.getElementById('mobile-nav')
+
+
+hamberger.addEventListener('click', (e) => {
+
+  if (mobileNav.style.display === "block") {
+    mobileNav.style.display = "none";
+    navicone.className = "fas fa-bars"
+  } else {
+    mobileNav.style.display = "block";
+    navicone.className = "fas fa-times"
+  }
+}) 
+
+// mobile nav end
