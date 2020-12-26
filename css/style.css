@@ -24,13 +24,17 @@ body {
 
 #navbar {
     vertical-align: middle;
-    padding: 1rem 0rem;
     position: fixed;
     width: 100%;
     top: 0;
     right: 0;
     z-index: 1000;
     transition: all linear 0.5s;
+    padding : 0.5rem 0rem;
+    background-color: #fff;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+    background-color: transparent;
+   
 }
 
 #navbar .container {
@@ -42,18 +46,19 @@ body {
     
 }
 
-#navbar #logo a {
+#navbar .logo a {
     text-decoration: none;
-   color: white;
 }
 
-#navbar #logo h1 {
-
+#navbar .logo h1 {
     letter-spacing: 0.4rem;
+    font-size: 1rem;
+    color: white;
 }
 
 #navbar .menu {
     position: relative;
+    display: none;
 }
 
 #navbar .menu ul {
@@ -65,30 +70,33 @@ body {
     list-style: none;
     margin: 0.5rem;
 }
-
-#whitelink li a {
+#navbar .menu ul li a{
     text-decoration: none;
+}
+
+
+#white-links a {
+color: white;
+}
+
+
+#nowhite-links a {
+color: #7b1fed;
+}
+
+#hamberger i {
     color: white;
-}
-
-#blacklink li a {
-    text-decoration: none;
-    color: #7b1fed;
-}
-
-
-#hamberger {
-    display: none;
-    color: #7b1fed;
     font-size: 20px;
 }
 
 
 #mobile-nav {
-    display: none;
     background-color: white;
-    margin-top: 50px;
-    padding: 10px;
+    top: 40px;
+    padding: 0px 5%;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
 }
 
 #mobile-nav ul li  {
@@ -107,7 +115,7 @@ body {
 
 /* Tablet  */ 
 
-@media screen and (max-width: 768px) {
+@media screen and  (min-width: 600px) and (max-width: 768px) {
     #navbar .container {
        flex-direction: column;        
     }
@@ -116,33 +124,20 @@ body {
 
 /* Mobile */ 
 
-@media screen and (max-width: 600px) {
-
-    #navbar {
-        padding: 0.5rem 0rem;
-        font-size: 1rem;
-        box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
-        
+@media screen and (min-width: 600px) {
+    #sitename h1 {
+        font-size: 1.5rem;
     }
-
-    #sitename {
-        color: #7b1fed;
-    }
-
+    
     #navbar .menu {
-        display: none;
+        display: block;
     }
 
     #hamberger {
-        display: block;
+        display: none;
     }
-    #navbar .container {
-        flex-direction: row;
-         
-     }
-
     #mobile-nav {
-        display: block;
+        display: none;
     }
     
 }

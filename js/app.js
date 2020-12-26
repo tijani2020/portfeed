@@ -5,35 +5,24 @@
 /* ====== sticky navbar on scroll ======== */
 
 const navigation = document.getElementById('navbar')
-const logo = document.getElementById('logo')
-const siteName = document.getElementById('sitename')
-const ulLink = document.getElementById('whitelink')
+const siteName = document.getElementById('site-name')
+const linksParent = document.getElementById('white-links')
 
 window.onscroll = function() {scrollFunction()};
 
-
 function scrollFunction() {
+  
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100)  {
-        navigation.style.padding = "0.5rem 0rem";
-        navigation.style.boxShadow = "0 2px 2px -2px rgba(0,0,0,.2)";
         navigation.style.backgroundColor = "#fff";
         siteName.style.color = "#7b1fed";
-        logo.style.fontSize = "1rem";
-        ulLink.id = "blacklink";
+        linksParent.id = 'nowhite-links'
+    }
 
-    }
-/*
-    else if (window.matchMedia("(max-width: 600px)")) {
-      siteName.style.color = "#7b1fed";
-    }
-*/
-    else  {
-        navigation.style.padding = "1rem 0rem";
-        navigation.style.borderBottom = "none";
-        logo.style.fontSize = "1.5rem";
-        siteName.style.color = "#fff";
+    else  {    
+
         navigation.style.backgroundColor = "transparent";
-        ulLink.id = "whitelink";
+        siteName.style.color = "white";
+        linksParent.id = 'white-links'
     }
 
 }
