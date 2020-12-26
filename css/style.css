@@ -541,6 +541,9 @@ header .hero .socials a:hover {
     flex-direction: column;
 
 }
+.portfolio-head h1 {
+    font-size: 25px;     
+}
 
 #skills-menu {
     display: flex;
@@ -666,22 +669,13 @@ header .hero .socials a:hover {
 
 /* Tablet  */ 
 
-@media screen and (max-width: 768px) {
-    #portfolio {
-        padding-top: 50px;     
+@media screen and (min-width: 480px) {
+    .portfolio-head h1 {
+        font-size: 45px;     
     }
 }
 
 
-/* Mobile */ 
-
-@media screen and (max-width: 480px) {
-    #skills-menu ul li {
-        font-size: 10px;
-    }
-    
-
-}
   /*   ==== end portfolio ==== */
 
 
