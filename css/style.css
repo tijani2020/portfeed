@@ -122,8 +122,6 @@ color: #7b1fed;
 }
 
 
-/* Mobile */ 
-
 @media screen and (min-width: 600px) {
     #sitename h1 {
         font-size: 1.5rem;
@@ -226,7 +224,7 @@ header .hero .socials a:hover {
 
 /* Media querie */ 
 
-/* Tablet  */ 
+/* desktop  */ 
 
 @media screen and (min-width: 768px) {
     header .hero h1 {
@@ -234,8 +232,7 @@ header .hero .socials a:hover {
     }
 }
 
-
-/* Mobile */ 
+/* Tablet */ 
 
 @media screen and (min-width: 480px) and (max-width: 768px)  {
     header .hero h1 {
@@ -264,13 +261,13 @@ header .hero .socials a:hover {
 #about .container .informations {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    flex-direction: column;
     margin: 0%;
 }
 
 #about .info,
 #about .skill {
-    width: 50%;
+    width: 80%;
 }
 
 .section-head {
@@ -362,25 +359,18 @@ header .hero .socials a:hover {
 
 /* Media querie */ 
 
-/* Tablet  */ 
+/* Tablet and desktop */ 
 
-@media screen and (max-width: 768px) {
-    #about {
-        padding-top: 70px;     
-    }
-
-}
-
-
-/* Mobile */ 
-
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
     #about .container .informations {
-        flex-direction: column;
+        flex-direction: row;
     }
     #about .info,
     #about .skill {
-        width: 80%;
+        width: 50%;
+    }
+    #about {
+        padding-top: 50px;
     }
 }
 /*   ==== end about ==== */
