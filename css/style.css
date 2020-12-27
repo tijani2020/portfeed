@@ -10,6 +10,7 @@ body {
     margin: 0rem;
     padding: 0rem;
     position: relative;
+    overflow-x: hidden;
 }
 
 .underlign {
@@ -34,14 +35,14 @@ body {
     background-color: #fff;
     box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
     background-color: transparent;
-   
+    
 }
 
 #navbar .container {
     position: relative;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     margin: 0px 5%;
     
 }
