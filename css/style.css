@@ -129,7 +129,7 @@ color: #7b1fed;
     }
     
     #navbar .menu {
-        display: none;
+        display: block;
     }
 
     #hamberger {
