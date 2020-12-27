@@ -408,6 +408,7 @@ header .hero .socials a:hover {
       margin: 20px;
       background-color: white;
       box-shadow: 2px 2px 2px -2px rgba(0,0,0,.3);
+      padding: 20px;
 
   }
 
@@ -427,6 +428,7 @@ header .hero .socials a:hover {
 
   .services-item p {
       margin-bottom: 15px;
+      
   }
 
 
