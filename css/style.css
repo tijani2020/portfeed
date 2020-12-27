@@ -403,11 +403,10 @@ header .hero .socials a:hover {
   }
 
   .services-item {
-      width: 80%;
+      width: 100%;
       text-align: center;
       margin: 20px;
       background-color: white;
-      padding: 20px;
       box-shadow: 2px 2px 2px -2px rgba(0,0,0,.3);
 
   }
