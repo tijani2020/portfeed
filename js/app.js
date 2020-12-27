@@ -8,6 +8,7 @@ const navigation = document.getElementById('navbar')
 const siteName = document.getElementById('site-name')
 const linksParent = document.getElementById('white-links')
 
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {

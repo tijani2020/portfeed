@@ -690,14 +690,14 @@ header .hero .socials a:hover {
       background-color:#7d21ed1a;
       display: flex;
       align-items: center;
-      justify-content: space-between;
       flex-direction: column;
-      padding: 100px 0px;
+      padding-top: 70px;
   }
 
 .swiper-container {
     width: 85%;
-    height: 350px;
+    height: 70%;
+    margin-top: 50px;
   }
 
   .swiper-slide p i {
