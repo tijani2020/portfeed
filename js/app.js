@@ -7,6 +7,7 @@
 const navigation = document.getElementById('navbar')
 const siteName = document.getElementById('site-name')
 const linksParent = document.getElementById('white-links')
+const backToTop = document.getElementById('back-to-top')
 
 
 window.onscroll = function() {scrollFunction()};
@@ -16,7 +17,8 @@ function scrollFunction() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100)  {
         navigation.style.backgroundColor = "#fff";
         siteName.style.color = "#7b1fed";
-        linksParent.id = 'nowhite-links'
+        linksParent.id = 'nowhite-links';
+        backToTop.style.display = 'block';
     }
 
     else  {    
@@ -24,11 +26,29 @@ function scrollFunction() {
         navigation.style.backgroundColor = "transparent";
         siteName.style.color = "white";
         linksParent.id = 'white-links'
+        backToTop.style.display = 'none';
     }
 
 }
 
+/* */ 
 
+//Get the button:
+const mybutton = document.getElementById("back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    mybutton.style.display = "flex";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+
+/* */ 
 
 const links = document.querySelectorAll(".menu ul a, .back-to-top a");
 
