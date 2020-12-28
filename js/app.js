@@ -2,12 +2,13 @@
 
  AOS.init();
 
-/* ====== sticky navbar on scroll ======== */
+  
+/* ====== sticky navbar on scroll start ======== */
 
 const navigation = document.getElementById('navbar')
 const siteName = document.getElementById('site-name')
 const linksParent = document.getElementById('white-links')
-const backToTop = document.getElementById('back-to-top')
+const mybutton = document.getElementById("back-to-top");
 
 
 window.onscroll = function() {scrollFunction()};
@@ -15,57 +16,21 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100)  {
+      mybutton.style.display = "flex";
         navigation.style.backgroundColor = "#fff";
         siteName.style.color = "#7b1fed";
         linksParent.id = 'nowhite-links';
-        backToTop.style.display = 'block';
     }
 
     else  {    
-
+      mybutton.style.display = "none";
         navigation.style.backgroundColor = "transparent";
         siteName.style.color = "white";
         linksParent.id = 'white-links'
-        backToTop.style.display = 'none';
     }
-
 }
 
-/* */ 
-
-//Get the button:
-const mybutton = document.getElementById("back-to-top");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    mybutton.style.display = "flex";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-
-/* */ 
-
-const links = document.querySelectorAll(".menu ul a, .back-to-top a");
-
-for (const link of links) {
-  link.addEventListener("click", clickHandler);
-}
-
-function clickHandler(e) {
-  e.preventDefault();
-  const href = this.getAttribute("href");
-
-  document.querySelector(href).scrollIntoView({
-    behavior: "smooth"
-  });
-}
-
-/* ====== sticky navbar on scroll ======== */
+/* ====== sticky navbar on scroll end ======== */
 
 
 /* ====== for testimonials from swiper ======== */
@@ -87,7 +52,6 @@ var mySwiper = new Swiper('.swiper-container', {
    },
 
 });
-
 
 /* ======= for testimonials from swiper ======= */
 
