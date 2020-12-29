@@ -175,42 +175,52 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0px 5%;
 }
 
 header .hero {
-      position: absolute;
       width: 100%;
-      z-index: 3;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      text-align: center;
   }
 
-  header .hero .photo {
-    border-radius: 50%;
-
+  header .hero .profile-pic {
+    clip-path: url(#path);
+    background-color: white;
+    height: 500px;
+    width: 45%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
   }
 
-header .hero .photo img {
-    padding: 3.5px;
-    border: 1.5px solid white;
-    border-radius: 50%;
+  .profile-pic img {
+    position: absolute;
+    bottom: 60px;
+    width: 350px; 
 }
 
-header .hero h1 {
+header .hero .info {
+text-align: center;
+width: 45%;
+}
+
+header .hero .info h1 {
     color: white;
     font-size: 25px;
 }
 
-header .hero h3 {
+header .hero .info h3 {
     color: white;
     margin-bottom: 1rem;
     margin-top: 0.7rem;
     
 }
 
-header .hero .socials {
+header .hero .info .socials {
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -218,7 +228,7 @@ header .hero .socials {
     width: 200px;
 }
 
-header .hero .socials a {
+header .hero .info .socials a {
     text-decoration: none;
     color: #7d21ed;
     background-color: white;
@@ -229,7 +239,7 @@ header .hero .socials a {
 
 }
 
-header .hero .socials a:hover {
+header .hero .info .socials a:hover {
     background-color: #7b1fed;
     transition: all linear 1.5s t;
     color: white;
@@ -242,7 +252,7 @@ header .hero .socials a:hover {
 /* desktop  */ 
 
 @media screen and (min-width: 768px) {
-    header .hero h1 {
+    header .hero .info h1 {
         font-size: 60px;
     }
 }
@@ -250,7 +260,7 @@ header .hero .socials a:hover {
 /* Tablet */ 
 
 @media screen and (min-width: 480px) and (max-width: 768px)  {
-    header .hero h1 {
+    header .hero .info h1 {
         font-size: 35px;
     }
 
