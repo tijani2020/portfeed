@@ -170,7 +170,7 @@ header {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url(/Images/bg.webp);
+    background-image: url(/Images/bgheader.svg);
     background-size: cover;
     display: flex;
     justify-content: center;
