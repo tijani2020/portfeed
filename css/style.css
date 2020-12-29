@@ -181,36 +181,39 @@ header {
 header .hero {
       width: 100%;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
+      flex-direction: column;
+      height: 70%;
+
   }
 
   header .hero .profile-pic {
-    clip-path: url(#path);
+   border-radius: 50%;
     background-color: white;
-    height: 500px;
-    width: 45%;
+    height:250px;
+    width: 250px;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+
   }
 
-  .profile-pic img {
+  header .hero  .profile-pic img {
     position: absolute;
-    bottom: 60px;
-    width: 350px; 
+    bottom:0px;
+    width: 200px; 
 }
 
 header .hero .info {
 text-align: center;
-width: 45%;
 }
 
 header .hero .info h1 {
     color: white;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 header .hero .info h3 {
@@ -255,6 +258,23 @@ header .hero .info .socials a:hover {
     header .hero .info h1 {
         font-size: 60px;
     }
+    header .hero {
+        width: 100%;
+        flex-direction: row;
+       
+    }
+    header .hero .profile-pic {
+         height:400px;
+         width: 400px;
+     
+       }
+     
+       header .hero  .profile-pic img {
+         width: 300px; 
+     }
+     header .hero .info {
+        width: 45%;
+        }
 }
 
 /* Tablet */ 
@@ -263,6 +283,23 @@ header .hero .info .socials a:hover {
     header .hero .info h1 {
         font-size: 35px;
     }
+
+    header .hero {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+    }
+    header .hero .profile-pic {
+         height:300px;
+         width: 300px;
+     
+       }
+     
+       header .hero  .profile-pic img {
+         width: 250px; 
+     }
 
 }
 /* ===== end header ===== */
