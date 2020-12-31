@@ -94,8 +94,6 @@ counters.forEach(counter => {
 /*   ================== end counters ============= */
 
 
-
-
 // Navigate projects start 
 
 
