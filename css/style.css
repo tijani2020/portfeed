@@ -1043,7 +1043,7 @@ input[type=text],input[type=email], textarea {
 /* ===== start footer =====*/
 
 footer {
-    height: 300px;
+    height: 450px;
     color: white;
     padding: 20px 5%;
     background-image: url(/Images/footer-bg.webp);
@@ -1058,9 +1058,14 @@ footer .container {
    display: flex;
    align-items: center;
    justify-content: center;
+   flex-direction: column;
+   width: 100%;
 }
 
-
+#sitename {
+    color: white;
+    text-decoration: none;
+}
 
 footer.contact-info {
     display: flex;
@@ -1111,23 +1116,22 @@ footer p {
 
 /* Tablet  */ 
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
 footer {
-    height: 400px;
+    height: 350px;
 }
+footer .container {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 }
 
 
 /* Mobile */ 
 
-@media screen and (max-width: 480px) {
-    footer {
-        height: 500px;
-       
-    }
-    footer .container {
-        flex-direction: column;
-    }
+@media screen and (min-width: 480px) and (max-width: 768px){
+
 }
 /* ===== edn footer =====*/
 
