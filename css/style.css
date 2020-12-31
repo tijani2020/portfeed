@@ -867,27 +867,24 @@ margin: 0px 20px;
     margin-top: 20px;
 }
 
-.img1 {
-    background: url(/Images/post1.webp);
-    background-size: cover;
+.thumbnail {
     height: 200px;
-    background-position: center;    
+    overflow: hidden;
+    
+}
+.thumbnail img {
+height: 100%;  
+width: 100%;
+object-fit: cover;
+transition: transform 0.7 ease;
 }
 
-.img2 {
-    background: url(/Images/pos3.webp);
-    background-size: cover;
-    height: 200px;
-}
-
-.img3 {
-    background: url(/Images/post2.webp);
-    background-size: cover;
-    height: 200px;
+.blog-post:hover img {
+transform: scale(1.1);
 }
 
 .topic {
-    width: 100px;
+    width: 40%;
     position: absolute;
     background-color: white;
     border-radius: 15px;
@@ -896,8 +893,8 @@ margin: 0px 20px;
     color: #7b1fed;
     cursor: pointer;
     top: 180px;
-    margin: auto;
     text-align: center;
+    margin: 0 25%;
 }
 
 
