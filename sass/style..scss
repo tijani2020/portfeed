@@ -1,3 +1,6 @@
+$primary-color: #7b1fed
+
+
 * {
     margin: 0rem;
     padding: 0rem;
@@ -16,7 +19,7 @@ body {
 
 .underlign {
     height: 3px;
-    background-color: #7b1fed;
+    background-color: $primary-color;
     width: 80px;
     margin: 10px auto;
     
@@ -123,7 +126,7 @@ color: #7b1fed;
     display: block;
     margin: 5px;
     text-decoration: none;
-    color: #7b1fed;
+    color: $primary-color;
 }
 
 
@@ -235,7 +238,7 @@ header .hero .info .socials {
 
 header .hero .info .socials a {
     text-decoration: none;
-    color: #7d21ed;
+    color: $primary-color;
     background-color: white;
     border-radius: 4px;
     width: 25px;
@@ -245,7 +248,7 @@ header .hero .info .socials a {
 }
 
 header .hero .info .socials a:hover {
-    background-color: #7b1fed;
+    background-color: $primary-color;
     transition: all linear 1.5s t;
     color: white;
 
@@ -341,7 +344,7 @@ header .hero .info .socials a:hover {
 
 .section-head h1 {
     font-size: 45px;
-    color: #7b1fed;
+    color: $primary-color;
 }
 
 #about .section-head p{
@@ -354,7 +357,7 @@ header .hero .info .socials a:hover {
 
 .info .detail .detail-item i {
     margin-right: 15px;
-    color: #7b1fed;
+    color: $primary-color;
 }
 
 
@@ -369,7 +372,7 @@ header .hero .info .socials a:hover {
   }
   
   .skills {
-    background-color: #7b1fed;
+    background-color: $primary-color;
     height: 5px;
     position: absolute;
     left: 0;
@@ -479,7 +482,7 @@ header .hero .info .socials a:hover {
 }
 
   .services-item i {
-      color: #7b1fed;
+      color: $primary-color;
       font-size: 30px;
   }
 
@@ -632,10 +635,10 @@ header .hero .info .socials a:hover {
 }
 
 #skills-menu ul li:first-child {
-    background-color: #7b1fed;
+    background-color: $primary-color;
     border-radius: 5px;
     padding: 3PX 5px;
-    border: 1.5px solid #7b1fed;
+    border: 1.5px solid $primary-color;
     color: white;
     
 }
@@ -648,8 +651,8 @@ header .hero .info .socials a:hover {
     background-color: white;
     border-radius: 5px;
     padding: 3PX 5px;
-    border: 1.5px solid #7b1fed;
-    color: #7b1fed;
+    border: 1.5px solid $primary-color;
+    color: $primary-color;
 }
 
 
@@ -712,8 +715,8 @@ header .hero .info .socials a:hover {
     background-color: white;
     border-radius: 5px;
     padding: 3PX 5px;
-    border: 1.5px solid #7b1fed;
-    color: #7b1fed;
+    border: 1.5px solid $primary-color;
+    color: $primary-color;
     cursor: pointer;
     margin-top: 40px;
     width: 150px;
@@ -721,7 +724,7 @@ header .hero .info .socials a:hover {
 
 .more-projects:hover {
     color: white;
-    background-color: #7b1fed;
+    background-color: $primary-color;
 }
 
 .more-projects i {
@@ -785,7 +788,7 @@ margin: 0px 20px;
       height: 150px;
       width: 150px;
       padding: 3.5px;
-      border: 1.5px solid #7b1fed;
+      border: 1.5px solid $primary-color;
       border-radius: 300px;
       margin: auto;
   }
@@ -797,7 +800,7 @@ margin: 0px 20px;
       height: 150px;
       width: 150px;
       padding: 3.5px;
-      border: 1.5px solid #7b1fed;
+      border: 1.5px solid $primary-color;
       border-radius: 300px;
       margin: auto;
   }
@@ -809,7 +812,7 @@ margin: 0px 20px;
       height: 150px;
       width: 150px;
       padding: 3.5px;
-      border: 1.5px solid #7b1fed;
+      border: 1.5px solid $primary-color;
       border-radius: 300px;
       margin: auto;
   }
@@ -893,8 +896,8 @@ transform: scale(1.1);
     background-color: white;
     border-radius: 15px;
     padding: 5PX 10px;
-    border: 1.5px solid #7b1fed;
-    color: #7b1fed;
+    border: 1.5px solid $primary-color;
+    color: $primary-color;
     cursor: pointer;
     top: 180px;
     text-align: center;
@@ -988,9 +991,9 @@ input[type=text],input[type=email], textarea {
   /* Style the submit button with a specific background color etc */
   input[type=submit] {
     background-color: white;
-    color: #7b1fed;
+    color: $primary-color;
     padding: 12px 20px;
-    border: 2px solid #7b1fed;
+    border: 2px solid$primary-color;
     border-radius: 30px;
     cursor: pointer;
     outline: none;
@@ -998,7 +1001,7 @@ input[type=text],input[type=email], textarea {
   
   /* When moving the mouse over the submit button, add a darker green color */
   input[type=submit]:hover {
-    background-color: #7b1fed;
+    background-color: $primary-color;
     color: white;
   }
 
