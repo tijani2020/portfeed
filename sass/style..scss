@@ -651,23 +651,23 @@ header {
             .project1 {
                 background: url(/Images/portfolio-screen.webp);
                 background-size: cover;
+                background-position: top;
             }
             
             .project2 {
                 background: url(/Images/portfolio-onepage.webp);
-                background-size: cover;
-                background-position: top;
+                @extend .project1;
+        
                 
             }
             .project3 {
                 background: url(/Images/p4d-sreen.webp);
-                background-size: cover;
-                background-position: top;
+                @extend .project1;
+                
             }
             .project4 {
                 background: url(/Images/portfolio-onepage.webp);
-                background-size: cover;
-                background-position: top;
+                @extend .project1;
             }
 
             .project1:hover,
