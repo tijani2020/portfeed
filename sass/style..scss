@@ -1,5 +1,10 @@
 @import "_variables.scss";
 
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 // Medium devices
 
@@ -24,13 +29,6 @@
     }
 }
 
-
-@mixin flex-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
 
 * {
     margin: 0rem;
@@ -103,23 +101,20 @@ body {
     .menu {
         position: relative;
         display: none;
+        ul {
+            display: flex; 
+            float: left;
+            li {
+                list-style: none;
+                margin: 0.5rem;
+                a{
+                    text-decoration: none;
+                }
+            }
+            
+        }
     }
 
-    .menu ul {
-        display: flex; 
-        float: left;
-        
-    }
-    
-    .menu ul li {
-        list-style: none;
-        margin: 0.5rem;
-    }
-
-    .menu ul li a{
-        text-decoration: none;
-    }
-    
     
     #white-links a {
     color: white;
@@ -160,46 +155,43 @@ body {
     
     #mobile-nav ul li  {
         list-style: none;
-    }
-    
-    #mobile-nav ul li a {
-        display: block;
-        margin: 5px;
-        text-decoration: none;
-        color: $primary-color;
-    }
-
-    /* Media querie */ 
-
-    @include tablet {
-        #navbar .container {
-            flex-direction: column;        
-         }
-    }
-    
-    
-    @include tablet-desktop() {
-        #sitename h1 {
-            font-size: 1.5rem;
-        }
-        
-        #navbar .menu {
+        a {
             display: block;
+            margin: 5px;
+            text-decoration: none;
+            color: $primary-color;
         }
-    
-        #hamberger {
-            display: none;
-        }
-    
-        #mobile-nav {
-            display: none;
-        }
-       
     }
     
 }
 
+ /* Media querie */ 
 
+ @include tablet {
+    .container {
+       flex-direction: column;        
+    }
+}
+
+
+@include tablet-desktop() {
+   #sitename h1 {
+       font-size: 1.5rem;
+   }
+   
+   #navbar .menu {
+       display: block;
+   }
+
+   #hamberger {
+       display: none;
+   }
+
+   #mobile-nav {
+       display: none;
+   }
+  
+}
 /* ===== header ===== */
 
 header {
@@ -278,10 +270,12 @@ header {
             }
   
     }
+  
+}
 
-    /* Media querie */  
+/* Media querie */  
 
-    @include desktop() {
+@include desktop() {
     header .hero {
         width: 100%;
         flex-direction: row;
@@ -301,7 +295,7 @@ header {
     }
     }
 
-    @include tablet() {
+@include tablet() {
     header .hero {
         width: 100%;
         display: flex;
@@ -319,8 +313,6 @@ header {
             font-size: 35px;
         } 
     } 
-    }
-  
 }
 
 /* ===== about ===== */
@@ -414,23 +406,24 @@ header {
              } 
         }
     }
+}
 
-    /* Media querie */ 
+/* Media querie */ 
 
-    @include tablet-desktop() {
-     #about {
-         padding-top: 50px;
-          .container .informations {
-            flex-direction: row;
-            .info,
-            .skill {
-        width: 50%;
-       }
+@include tablet-desktop() {
+    #about {
+        padding-top: 50px;
+         .container .informations {
+           flex-direction: row;
+           .info,
+           .skill {
+       width: 50%;
       }
      }
-
     }
-}
+
+   }
+
 
 /*   ====  services ==== */
   #services {
@@ -447,61 +440,58 @@ header {
     .services-head {
         margin: 50px 0px 15px 0px;
     }
-
+    
     .services-items {
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
+    }
 
-        .services-item {
-            width: 100%;
-            text-align: center;
-            margin: 20px;
-            background-color: white;
-            box-shadow: 2px 2px 2px -2px rgba(0,0,0,.3);
-            padding: 20px;
+    .services-item {
+        width: 100%;
+        text-align: center;
+        margin: 20px;
+        background-color: white;
+        box-shadow: 2px 2px 2px -2px rgba(0,0,0,.3);
+        padding: 20px;
 
-            i {
-                color: $primary-color;
-                font-size: 30px;
-            }
-
-            h3 {
-                color: gray;
-                margin: 15px 0px;
-            }
-
-            p {
-                margin-bottom: 15px;
-                
-            }
+        i {
+            color: $primary-color;
+            font-size: 30px;
+        }
+    
+        h3 {
+            color: gray;
+            margin: 15px 0px;
+        }
+    
+        p {
+            margin-bottom: 15px;
+            
         }
 
-        .services-item:hover {
-            box-shadow: 2px 2px 3px 2px rgba(0,0,0,.2);
-        }
-        
+    }
+
+    .services-item:hover {
+        box-shadow: 2px 2px 3px 2px rgba(0,0,0,.2);
     }
   }
 
   /* Media querie */ 
 
-/* desktop  */ 
+  @include tablet() {
+    #services .services-items .services-item {
+        width: 40%;  
+    }
+}
 
-@media screen and (min-width: 768px)  {
-    .services-item {
+@include desktop() {
+    #services .services-items .services-item {
         width: 26%;
     }
 }
 
-/* tablet */ 
-
-@media screen and (min-width: 480px) and (max-width: 768px) {
-    .services-item {
-        width: 40%;  
-    }
-}
 
 
 /*   ==== counters ==== */
@@ -547,36 +537,33 @@ header {
 
 /* Media querie */ 
 
-/* Mobile */ 
-
 @media screen and (min-width: 480px) and (max-width: 768px) {
     #counters {
         height: 450px;
-    }
-    
-    #counters .container {
-       
-       flex-direction: row;
-       flex-wrap: wrap;
-    }
-    .counter-item {
-        width: 45%;
-        font-size: 15px;
+        .container {
+            flex-direction: row;
+            flex-wrap: wrap;
+            .counter-item {
+                width: 45%;
+                font-size: 15px;
+            }
+         }
     }
 }
 
-@media screen and (min-width: 768px) {
+@include desktop() {
     #counters {
         height: 350px;
+        .container {
+            flex-direction: row;
+            .counter-item {
+                width: 20%;
+                font-size: 20px;
+            }
+            
+         }
     }
-    #counters .container {
-        flex-direction: row;
-        
-     }
-    .counter-item {
-        width: 20%;
-        font-size: 20px;
-    }
+
 }
 
 
@@ -590,130 +577,129 @@ header {
         display: flex;
         align-items: center;
         flex-direction: column;
+    
+    }
 
-        .portfolio-head h1 {
-            font-size: 25px;     
+    .portfolio-head h1 {
+        font-size: 25px;     
+    }
+
+    #skills-menu {
+        display: flex;
+        justify-content: space-between;
+        color: gray;
+        margin-top: 30px;
+        margin-bottom: 15px;
+
+        .skills-menu-item {
+            cursor: pointer;
         }
 
-        #skills-menu {
-            display: flex;
-            justify-content: space-between;
-            color: gray;
-            margin-top: 30px;
-            margin-bottom: 15px;
+        ul {
+            @include flex-center();
 
-            .skills-menu-item {
-                cursor: pointer;
-            }
-
-            ul {
-                @include flex-center();
-
-                li:first-child {
-                    background-color: $primary-color;
-                    border-radius: 5px;
-                    padding: 3PX 5px;
-                    border: 1.5px solid $primary-color;
-                    color: white;
-                    
-                }
-
-                li {
-                    list-style: none;
-                    margin: 10px;
-                    cursor: pointer;
-                    font-size: 15px;
-                    background-color: white;
-                    border-radius: 5px;
-                    padding: 3PX 5px;
-                    border: 1.5px solid $primary-color;
-                    color: $primary-color;
-                }
+            li:first-child {
+                background-color: $primary-color;
+                border-radius: 5px;
+                padding: 3PX 5px;
+                border: 1.5px solid $primary-color;
+                color: white;
                 
             }
-        }
 
-        .project-box {
-            width: 200px;
-            height:300px;
-            margin: 20px;
-            background-position: top;
-            box-shadow: 2px 2px 2px -2px rgba(0,0,0,.5);
-
-            .Wordpress,
-            .landingpage {
-            display: none;
-          }
-
-          .projects {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-
-            .project1 {
-                background: url(/Images/portfolio-screen.webp);
-                background-size: cover;
-                background-position: top;
+            li {
+                list-style: none;
+                margin: 10px;
+                cursor: pointer;
+                font-size: 15px;
+                background-color: white;
+                border-radius: 5px;
+                padding: 3PX 5px;
+                border: 1.5px solid $primary-color;
+                color: $primary-color;
             }
             
-            .project2 {
-                background: url(/Images/portfolio-onepage.webp);
-                @extend .project1;
-                
-            }
-            .project3 {
-                background: url(/Images/p4d-sreen.webp);
-                @extend .project1;
-                
-            }
-            .project4 {
-                background: url(/Images/portfolio-onepage.webp);
-                @extend .project1;
-            }
+        }
+    }
+    .project-box {
+        width: 200px;
+        height:300px;
+        margin: 20px;
+        background-position: top;
+        box-shadow: 2px 2px 2px -2px rgba(0,0,0,.5);
+       
+    }
 
-            .project1:hover,
-            .project2:hover,
-            .project3:hover,
-            .project4:hover {
-               background-position: bottom;
-               transition: all 4000ms;
-}
-        }
-           
-        }
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 
-        .more-projects {
-            list-style: none;
-            margin: 10px;
-            background-color: white;
-            border-radius: 5px;
-            padding: 3PX 5px;
-            border: 1.5px solid $primary-color;
-            color: $primary-color;
-            cursor: pointer;
-            margin-top: 40px;
-            width: 150px;
-
-            i {
-                font-size: 20px;
-                margin-left: 3px;
-            }
-        }
-        
-        .more-projects:hover {
-            color: white;
-            background-color: $primary-color;
-        }
+    .project1 {
+        background: url(/Images/portfolio-screen.webp);
+        background-size: cover;
+        background-position: top;
+    }
     
+    .project2 {
+        background: url(/Images/portfolio-onepage.webp);
+        background-size: cover;
+        background-position: top;
+        
+    }
+    .project3 {
+        background: url(/Images/p4d-sreen.webp);
+        background-size: cover;
+        background-position: top;
+        
+    }
+    .project4 {
+        background: url(/Images/portfolio-onepage.webp);
+        background-size: cover;
+        background-position: top;
+    }
+
+    .project1:hover,
+    .project2:hover,
+    .project3:hover,
+    .project4:hover {
+       background-position: bottom;
+       transition: all 4000ms;
+    }
+
+    .Wordpress,
+    .landingpage {
+    display: none;
+  }
+    .more-projects {
+        list-style: none;
+        margin: 10px;
+        background-color: white;
+        border-radius: 5px;
+        padding: 3PX 5px;
+        border: 1.5px solid $primary-color;
+        color: $primary-color;
+        cursor: pointer;
+        margin-top: 40px;
+        width: 150px;
+
+        i {
+            font-size: 20px;
+            margin-left: 3px;
+        }
+    }
+    
+    .more-projects:hover {
+        color: white;
+        background-color: $primary-color;
     }
   }
 
 /* Media querie */ 
 
-/* Tablet  */ 
-
-@media screen and (min-width: 480px) {
-    .portfolio-head h1 {
+@include tablet-desktop() {
+    #portfolio .portfolio-head h1 {
         font-size: 45px;     
     }
 }
@@ -799,7 +785,6 @@ header {
 
 /* ===== Blog =====*/
 
-
   #blog {
     height: 100%;
 
@@ -874,19 +859,16 @@ header {
 
 /* Media querie */ 
 
-/* Tablet  */ 
 
 @media screen and (min-width: 768px) {
-    #blog .blog-posts .blog-post {
+    #blog .container .blog-posts .blog-post {
         width: 28%;
     }
 }
 
 
-/* Mobile */ 
-
 @media screen and (min-width: 600px) and (max-width: 768px) {
-    #blog .blog-posts .blog-post {
+    #blog .container .blog-posts .blog-post {
         width: 45%;
     }
 }
