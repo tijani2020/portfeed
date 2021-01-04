@@ -435,7 +435,7 @@ header {
 /*   ====  services ==== */
   #services {
       height: 100%;
-      background-color: #bb84ff1a;
+      background-color: $section-color;
       display: flex;
       align-items: center;
       padding-top: 20px;  
@@ -510,8 +510,7 @@ header {
     padding: 25px 5%;
     background: url(../Images/bg-counters.webp); 
     text-align: center;
-    background-position: center;
-    background-size: cover;
+    @include bg-cover-center();
 
     .container {
         display: flex;
