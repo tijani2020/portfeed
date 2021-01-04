@@ -893,6 +893,7 @@ header {
     align-items: center;
     justify-content: space-between;
     flex-direction: column-reverse;
+    width: 100%;
 
 }
 
@@ -904,7 +905,7 @@ header {
 .map,
 .forum {
     width: 90%;
-    margin-bottom: 25px;
+    margin: 25px;
 }
 
 .forum {
@@ -958,12 +959,13 @@ header {
     #contact {
         .container {
             padding: 70px 5%;
-        padding-top: 50px;     
+          padding-top: 50px;     
         .contact-section {
             flex-direction: row;
+            justify-content: space-between;
             .map,
            .forum {
-          width: 45%;
+          width: 40%;
           }
         }
     }
