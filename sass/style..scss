@@ -981,7 +981,7 @@ header {
 /* =====  footer =====*/
 
 footer {
-    height: 450px;
+    height: 500px;
     color: white;
     padding: 20px 5%;
     background-image: url(/Images/footer-bg.webp);
@@ -1050,7 +1050,7 @@ footer {
   }
 @include desktop() {
     footer {
-        height: 350px;
+        height: 450px;
         .container {
             flex-direction: row;
             justify-content: space-around;
