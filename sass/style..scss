@@ -378,29 +378,37 @@ header {
                   [data-aos="html-animation"] {
                      width: 0%;
 
-                  &.aos-animate 
-                     width: 75%;
+                  &.aos-animate {
+                    width: 75%;
+                  }
+                     
                   }
 
                   [data-aos="css-animation"] {
                      width: 0%;
                 
-                 &.aos-animate 
-                     width: 90%;
+                 &.aos-animate {
+                    width: 90%;
+                 }
+                    
                   }
 
                  [data-aos="js-animation"] {
                      width: 0%;
 
-                 &.aos-animate 
-                     width: 80%;
+                 &.aos-animate {
+                    width: 80%;
+                 }
+                     
                   }
 
                  [data-aos="php-animation"] {
                      width: 0%;
                  
-                 &.aos-animate 
-                     width: 90%;
+                 &.aos-animate {
+                    width: 90%;
+                 }
+                     
                   }
              } 
         }
