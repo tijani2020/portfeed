@@ -145,8 +145,6 @@ skillsMenu.addEventListener('click', event => {
 const hamberger = document.getElementById('hamberger')
 const navicone = document.getElementById('navicone')
 const mobileNav = document.getElementById('mobile-nav')
-const siteName = document.getElementById('site-name')
-
 
 mobileNav.style.display = "none";
 
