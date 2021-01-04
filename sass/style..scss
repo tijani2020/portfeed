@@ -882,105 +882,110 @@ header {
       background-color:#7d21ed1a;
 
       .container {
-        padding: 70px 8%;
+        padding: 70px 2%;
 
-        .contact-section {
-            margin-top: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            .map {
-                box-shadow: 2px 2px 2px -2px rgba(0,0,0,.3);
-                height: 370px;
-            }
-
-            .map,
-            .forum {
-                width: 50%;
-             margin: 0px 20px;
-         }
-
-         .forum {
-
-            .name {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-
-                input {
-                    width: 47%;
-                }
-            }
-
-            /* Style inputs with type="text",  and textareas */
-            input[type=text],input[type=email], textarea {
-                width: 100%; 
-                padding: 15px; 
-                border: 2px solid #7b1fed; 
-                border-radius: 30px; 
-                box-sizing: border-box; 
-                margin-top: 6px; 
-                margin-bottom: 16px; 
-                outline: none;
-   
-          }
-
-           /* Style the submit button with a specific background color etc */
-            input[type=submit] {
-              background-color: white;
-              color: $primary-color;
-              padding: 12px 20px;
-              border: 2px solid$primary-color;
-              border-radius: 30px;
-              cursor: pointer;
-              outline: none;
-          }
-  
-            /* When moving the mouse over the submit button, add a darker green color */
-            input[type=submit]:hover {
-             background-color: $primary-color;
-             color: white;
-          }
-
-         }
-        }
     }
   }
+
+  .contact-section {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+
+}
+
+.map {
+    box-shadow: 2px 2px 2px -2px rgba(0,0,0,.3);
+    height: 370px;
+}
+
+.map,
+.forum {
+    width: 90%;
+    margin-bottom: 25px;
+}
+
+.forum {
+
+    .name {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        input {
+            width: 47%;
+        }
+    }
+
+    /* Style inputs with type="text",  and textareas */
+    input[type=text],input[type=email], textarea {
+        width: 100%; 
+        padding: 15px; 
+        border: 2px solid #7b1fed; 
+        border-radius: 30px; 
+        box-sizing: border-box; 
+        margin-top: 6px; 
+        margin-bottom: 16px; 
+        outline: none;
+
+  }
+
+   /* Style the submit button with a specific background color etc */
+    input[type=submit] {
+      background-color: white;
+      color: $primary-color;
+      padding: 12px 20px;
+      border: 2px solid$primary-color;
+      border-radius: 30px;
+      cursor: pointer;
+      outline: none;
+  }
+
+    /* When moving the mouse over the submit button, add a darker green color */
+    input[type=submit]:hover {
+     background-color: $primary-color;
+     color: white;
+  }
+
+ }
 
 
   /* Media querie */ 
 
 /* Tablet  */ 
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
 
     #contact {
+        .container {
+            padding: 70px 5%;
         padding-top: 50px;     
+        .contact-section {
+            flex-direction: row;
+            .map,
+           .forum {
+          width: 45%;
+          }
+        }
+    }
     }
 
-    .contact-section {
-        flex-direction: column-reverse;
-    }
 
-    .contact-section .map,
-    .contact-section .forum {
-    width: 80%;
-    margin: 20px;
-}
 
 }
 
 
 /* Mobile */ 
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 576px) and (max-width: 768px)  {
     #contact .container {
         padding: 70px 2.5%;
     }
     .contact-section .map,
-.contact-section .forum {
-    width: 95%;
+   .contact-section .forum {
+    width: 80%;
 }
 
 }
