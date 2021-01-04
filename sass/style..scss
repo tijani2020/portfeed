@@ -1051,19 +1051,22 @@ footer {
 
    a {
     color: $primary-color;
-}
+  }
   }
 
-@media screen and (min-width: 768px) {
-footer {
-    height: 350px;
-}
-footer .container {
-    flex-direction: row;
-    justify-content: space-around;
+
+@include desktop() {
+    footer {
+        height: 350px;
+        .container {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
 }
 
-}
+
+
 
 
 
