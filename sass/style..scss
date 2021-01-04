@@ -809,6 +809,15 @@ header {
                     p {
                         margin-top: 20px;
                     }
+
+                    .read-more {
+                        margin-top: 10px;
+                        a {
+                            text-decoration: none;
+                            color: $primary-color;
+                        }
+
+                    }
                 }
 
                 .thumbnail {
