@@ -965,7 +965,8 @@ header {
             justify-content: space-between;
             .map,
            .forum {
-          width: 40%;
+          width: 45%;
+         
           }
         }
     }
@@ -973,7 +974,7 @@ header {
 }
 
 
-@include tablet-desktop() {
+@include tablet() {
     #contact .container {
         padding: 70px 2.5%;
         .contact-section .map,
