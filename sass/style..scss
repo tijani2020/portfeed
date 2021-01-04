@@ -896,6 +896,9 @@ header {
 .map {
     box-shadow: 2px 2px 2px -2px rgba(0,0,0,.3);
     height: 370px;
+    iframe {
+        height: 100%;
+    }
 }
 
 .map,
