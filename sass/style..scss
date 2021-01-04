@@ -954,10 +954,7 @@ header {
 
   /* Media querie */ 
 
-/* Tablet  */ 
-
-@media screen and (min-width: 768px) {
-
+@include desktop() {
     #contact {
         .container {
             padding: 70px 5%;
@@ -971,23 +968,17 @@ header {
         }
     }
     }
-
-
-
 }
 
 
-/* Mobile */ 
-
-@media screen and (min-width: 576px) and (max-width: 768px)  {
+@include tablet-desktop() {
     #contact .container {
         padding: 70px 2.5%;
+        .contact-section .map,
+        .contact-section .forum {
+           width: 80%;
+      }
     }
-    .contact-section .map,
-   .contact-section .forum {
-    width: 80%;
-}
-
 }
 
 
