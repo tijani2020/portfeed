@@ -6,6 +6,11 @@
     justify-content: center;
 }
 
+@mixin bg-cover-center {
+    background-size: cover;
+    background-position: center;
+}
+
 // Medium devices
 
 @mixin tablet {
@@ -707,7 +712,7 @@ header {
 
   #testimonials {
       height: 100vh;
-      background-color:#7d21ed1a;
+      background-color: $section-color;
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -729,14 +734,12 @@ header {
 
                   h3 {
                     margin: 20px auto;
-                   
                 }
           }
 
           .pic1 {
             background: url(/Images/test1.webp);
-             background-size: cover;
-             background-position: center;
+             @include bg-cover-center();
              height: 150px;
              width: 150px;
              padding: 3.5px;
@@ -747,8 +750,7 @@ header {
        
          .pic2 {
             background: url(/Images/test1.webp);
-             background-size: cover;
-             background-position: center;
+            @include bg-cover-center();
              height: 150px;
              width: 150px;
              padding: 3.5px;
@@ -759,8 +761,7 @@ header {
        
          .pic3 {
             background: url(/Images/test3.webp);
-             background-size: cover;
-             background-position: center;
+            @include bg-cover-center();
              height: 150px;
              width: 150px;
              padding: 3.5px;
