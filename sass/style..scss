@@ -857,23 +857,20 @@ header {
     }
 }
 
-
 /* Media querie */ 
 
-
-@media screen and (min-width: 768px) {
+@include desktop() {
     #blog .container .blog-posts .blog-post {
         width: 28%;
     }
+
 }
 
-
-@media screen and (min-width: 600px) and (max-width: 768px) {
+@include tablet() {
     #blog .container .blog-posts .blog-post {
         width: 45%;
     }
 }
-
 
 /* =====  contact =====*/
 
