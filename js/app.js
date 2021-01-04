@@ -146,6 +146,7 @@ const hamberger = document.getElementById('hamberger')
 const navicone = document.getElementById('navicone')
 const mobileNav = document.getElementById('mobile-nav')
 
+mobileNav.style.display = "none";
 
 hamberger.addEventListener('click', (e) => {
 
