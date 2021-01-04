@@ -63,7 +63,7 @@ body {
     font-size: 25px;
 }
 
-.section-head h1 {
+.section-head h2 {
     font-size: 45px;
     color: $primary-color;
 }
@@ -233,7 +233,7 @@ header {
            .info {
             text-align: center;
 
-            h1 {
+            h2 {
                 color: white;
                 font-size: 20px;
             }
@@ -284,7 +284,7 @@ header {
         flex-direction: row;
         .info {
             width: 45%;
-            h1 {
+            h2 {
                 font-size: 60px;
             }
             }
@@ -312,7 +312,7 @@ header {
             }
         
           }
-          .info h1 {
+          .info h2 {
             font-size: 35px;
         } 
     } 
@@ -586,7 +586,7 @@ header {
     
     }
 
-    .portfolio-head h1 {
+    .portfolio-head h2 {
         font-size: 25px;     
     }
 
@@ -694,7 +694,7 @@ header {
 /* Media querie */ 
 
 @include tablet-desktop() {
-    #portfolio .portfolio-head h1 {
+    #portfolio .portfolio-head h2 {
         font-size: 45px;     
     }
 }
