@@ -145,6 +145,8 @@ skillsMenu.addEventListener('click', event => {
 const hamberger = document.getElementById('hamberger')
 const navicone = document.getElementById('navicone')
 const mobileNav = document.getElementById('mobile-nav')
+const siteName = document.getElementById('site-name')
+
 
 mobileNav.style.display = "none";
 
@@ -153,9 +155,12 @@ hamberger.addEventListener('click', (e) => {
   if (mobileNav.style.display === "block") {
     mobileNav.style.display = "none";
     navicone.className = "fas fa-bars"
+    navicone.style.color = "white";
+
   } else {
     mobileNav.style.display = "block";
     navicone.className = "fas fa-times"
+    navicone.style.color = "#7b1fed";
   }
 }) 
 
